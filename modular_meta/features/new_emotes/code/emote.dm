@@ -2,7 +2,7 @@
 	key = "medic_so"
 	name = "medic! (soldier)"
 	key_third_person = "calls for medic"
-	message = "calls medic!"
+	message = "calls a medic!"
 	cooldown = 4 SECONDS
 	emote_type = EMOTE_VISIBLE | EMOTE_AUDIBLE
 	vary = TRUE
