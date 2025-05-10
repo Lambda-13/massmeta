@@ -1,10 +1,14 @@
+// возвращает refresher crystal, был убран в PR
+// https://github.com/tgstation/tgstation/pull/60192
+
 #define ACTIVATE_TOUCH "touch"
 
 /obj/machinery/anomalous_crystal/refresher //Deletes and recreates a copy of the item, "refreshing" it.
 	observer_desc = "This crystal \"refreshes\" items that it affects, rendering them as new."
 	activation_method = ACTIVATE_TOUCH
-	cooldown_add = 50
+	cooldown_add = 50 SECONDS
 	activation_sound = 'sound/effects/magic/timeparadox2.ogg'
+	use_time = 1 SECONDS
 	var/static/list/banned_items_typecache = typecacheof(list(/obj/item/storage, /obj/item/implant, /obj/item/implanter, /obj/item/disk/nuclear, /obj/projectile, /obj/item/spellbook))
 
 /obj/machinery/anomalous_crystal/refresher/ActivationReaction(mob/user, method)
@@ -23,4 +27,3 @@
 			qdel(CHOSEN)
 
 #undef ACTIVATE_TOUCH
-

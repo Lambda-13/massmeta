@@ -1,3 +1,5 @@
+//gives void cloak pressure resistance
+
 /obj/item/clothing/head/hooded/cult_hoodie/void
 	clothing_flags = STOPSPRESSUREDAMAGE
 

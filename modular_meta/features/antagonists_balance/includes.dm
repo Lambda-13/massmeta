@@ -1,3 +1,7 @@
+#include "code\heretic_armor.dm"
+#include "code\mod.dm"
+#include "code\uplink_items.dm"
+
 /datum/modpack/antagonists_balance
 	id = "antagonists_balance"
 	name = "Баланс Антагонистов"

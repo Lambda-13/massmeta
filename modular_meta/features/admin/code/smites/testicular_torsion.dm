@@ -22,7 +22,7 @@
 	carbon_target.cause_wound_of_type_and_severity(WOUND_BLUNT, carbon_target.get_bodypart(BODY_ZONE_R_LEG), WOUND_SEVERITY_TRIVIAL, WOUND_SEVERITY_SEVERE)
 	carbon_target.Paralyze(15 SECONDS)
 
-	playsound(target, 'modular_meta/features/admin_smites/sound/testicular_torsion.ogg', 60)
+	playsound(target, 'modular_meta/features/admin/sound/testicular_torsion.ogg', 60)
 	carbon_target.visible_message(
 		span_danger("You can see [carbon_target]'s balls being crushed by an unknown force! You can feel the pain just by looking at it."),
 		span_userdanger("You can feel like your balls are being crushed!"),

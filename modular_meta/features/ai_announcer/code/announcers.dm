@@ -1,24 +1,27 @@
 /datum/centcom_announcer/default
-	event_sounds = list(ANNOUNCER_AIMALF = 'massmeta/sounds/announces/aimalf.ogg',
+	command_report_sounds = list('modular_meta/features/ai_announcer/sound/commandreport.ogg')
+	event_sounds = list(
+		ANNOUNCER_AIMALF = 'modular_meta/features/ai_announcer/sound/aimalf.ogg',
 		ANNOUNCER_ALIENS = 'sound/announcer/default/aliens.ogg',
 		ANNOUNCER_ANIMES = 'sound/announcer/default/animes.ogg',
-		ANNOUNCER_GRANOMALIES = 'massmeta/sounds/announces/granomalies.ogg',
+		ANNOUNCER_GRANOMALIES = 'modular_meta/features/ai_announcer/sound/granomalies.ogg',
 		ANNOUNCER_INTERCEPT = 'sound/announcer/default/intercept.ogg',
-		ANNOUNCER_IONSTORM = 'massmeta/sounds/announces/ionstorm.ogg',
-		ANNOUNCER_METEORS = 'massmeta/sounds/announces/meteors.ogg',
-		ANNOUNCER_OUTBREAK5 = 'massmeta/sounds/announces/outbreak5.ogg',
-		ANNOUNCER_OUTBREAK7 = 'massmeta/sounds/announces/outbreak7.ogg',
-		ANNOUNCER_POWEROFF = 'massmeta/sounds/announces/poweroff.ogg',
-		ANNOUNCER_POWERON = 'massmeta/sounds/announces/poweron.ogg',
-		ANNOUNCER_RADIATION = 'massmeta/sounds/announces/radiation.ogg',
-		ANNOUNCER_SHUTTLECALLED = 'massmeta/sounds/announces/shuttlecalled.ogg',
-		ANNOUNCER_SHUTTLEDOCK = 'massmeta/sounds/announces/shuttledock.ogg',
-		ANNOUNCER_SHUTTLERECALLED = 'massmeta/sounds/announces/shuttlerecalled.ogg',
-		ANNOUNCER_SPANOMALIES = 'sound/announcer/default/spanomalies.ogg')
-	command_report_sounds = list('massmeta/sounds/announces/commandreport.ogg')
+		ANNOUNCER_IONSTORM = 'modular_meta/features/ai_announcer/sound/ionstorm.ogg',
+		ANNOUNCER_METEORS = 'modular_meta/features/ai_announcer/sound/meteors.ogg',
+		ANNOUNCER_OUTBREAK5 = 'modular_meta/features/ai_announcer/sound/outbreak5.ogg',
+		ANNOUNCER_OUTBREAK7 = 'modular_meta/features/ai_announcer/sound/outbreak7.ogg',
+		ANNOUNCER_POWEROFF = 'modular_meta/features/ai_announcer/sound/poweroff.ogg',
+		ANNOUNCER_POWERON = 'modular_meta/features/ai_announcer/sound/poweron.ogg',
+		ANNOUNCER_RADIATION = 'modular_meta/features/ai_announcer/sound/radiation.ogg',
+		ANNOUNCER_SHUTTLECALLED = 'modular_meta/features/ai_announcer/sound/shuttlecalled.ogg',
+		ANNOUNCER_SHUTTLEDOCK = 'modular_meta/features/ai_announcer/sound/shuttledock.ogg',
+		ANNOUNCER_SHUTTLERECALLED = 'modular_meta/features/ai_announcer/sound/shuttlerecalled.ogg',
+		ANNOUNCER_SPANOMALIES = 'sound/announcer/default/spanomalies.ogg'
+		)
 
 /datum/centcom_announcer/intern
-	event_sounds = list(ANNOUNCER_AIMALF = 'massmeta/sounds/announces/aimalf.ogg',
+	event_sounds = list(
+		ANNOUNCER_AIMALF = 'modular_meta/features/ai_announcer/sound/aimalf.ogg',
 		ANNOUNCER_ALIENS = 'sound/announcer/intern/aliens.ogg',
 		ANNOUNCER_ANIMES = 'sound/announcer/intern/animes.ogg',
 		ANNOUNCER_GRANOMALIES = 'sound/announcer/intern/granomalies.ogg',
@@ -33,10 +36,12 @@
 		ANNOUNCER_SHUTTLECALLED = 'sound/announcer/intern/shuttlecalled.ogg',
 		ANNOUNCER_SHUTTLEDOCK = 'sound/announcer/intern/shuttledock.ogg',
 		ANNOUNCER_SHUTTLERECALLED = 'sound/announcer/intern/shuttlerecalled.ogg',
-		ANNOUNCER_SPANOMALIES = 'sound/announcer/intern/spanomalies.ogg')
+		ANNOUNCER_SPANOMALIES = 'sound/announcer/intern/spanomalies.ogg'
+		)
 
 /datum/centcom_announcer/medbot
-	event_sounds = list(ANNOUNCER_AIMALF = 'massmeta/sounds/announces/aimalf.ogg',
+	event_sounds = list(
+		ANNOUNCER_AIMALF = 'modular_meta/features/ai_announcer/sound/aimalf.ogg',
 		ANNOUNCER_ALIENS = 'sound/announcer/medbot/aliens.ogg',
 		ANNOUNCER_ANIMES = 'sound/announcer/medbot/animes.ogg',
 		ANNOUNCER_GRANOMALIES = 'sound/announcer/medbot/granomalies.ogg',
@@ -51,4 +56,5 @@
 		ANNOUNCER_SHUTTLECALLED = 'sound/announcer/medbot/shuttlecalled.ogg',
 		ANNOUNCER_SHUTTLEDOCK = 'sound/announcer/medbot/shuttledock.ogg',
 		ANNOUNCER_SHUTTLERECALLED = 'sound/announcer/medbot/shuttlerecalled.ogg',
-		ANNOUNCER_SPANOMALIES = 'sound/announcer/medbot/spanomalies.ogg')
+		ANNOUNCER_SPANOMALIES = 'sound/announcer/medbot/spanomalies.ogg'
+		)

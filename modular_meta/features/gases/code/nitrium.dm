@@ -1,3 +1,7 @@
+// nerf PRs
+// https://github.com/tgstation/tgstation/pull/69180
+//
+
 /datum/reagent/nitrium_high_metabolization/on_mob_metabolize(mob/living/breather)
 	. = ..()
 	ADD_TRAIT(breather, TRAIT_STUNIMMUNE, type)
