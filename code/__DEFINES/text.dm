@@ -82,7 +82,11 @@
 /// File location for brain damage traumas
 #define BRAIN_DAMAGE_FILE "massmeta/traumas_ru.json" //MASSMETA EDIT CHANGE (ru_traumas) - ORIGINAL: #define BRAIN_DAMAGE_FILE "traumas.json"
 /// File location for AI ion laws
-#define ION_FILE "massmeta/ion_laws.json" //MASSMETA EDIT CHANGE (ru_ai_laws) - ORIGINAL: #define ION_FILE "ion_laws.json"
+//MASSMETA EDIT (ru_ai_laws + ru_traitor_words)
+//#define ION_FILE "ion_laws.json"
+
+#define ION_FILE "massmeta/ion_laws_ru.json"
+//MASSMETA EDIT
 /// File location for pirate names
 #define PIRATE_NAMES_FILE "pirates.json"
 /// File location for redpill questions
@@ -92,7 +96,11 @@
 /// File location for boomer meme catchphrases
 #define BOOMER_FILE "boomer.json"
 /// File location for locations on the station
-#define LOCATIONS_FILE "locations.json"
+//MASSMETA EDIT (ru_traitor_words)
+//#define LOCATIONS_FILE "locations.json"
+
+#define LOCATIONS_FILE "massmeta/locations_ru.json"
+//MASSMETA EDIT
 /// File location for wanted posters messages
 #define WANTED_FILE "wanted_message.json"
 /// File location for really dumb suggestions memes

@@ -13,8 +13,6 @@
 
 //master files (unsorted, TODO: need modularization)
 
-#include "code\_globalvars\lists\names.dm"
-#include "code\__HELPERS\names.dm"
 #include "code\modules\clothing\clothing.dm"
 #include "code\modules\surgery\organs\tongue.dm"
 #include "code\modules\clothing\suits\chaplainsuits.dm"
