@@ -189,7 +189,7 @@
 	)
 	/// List of selectable large options
 	var/static/list/graffiti_large_h = list(
-		//"furrypride" = CRAYON_COST_LARGE, //MASSMETA EDIT REMOVAL (lgbt_removal)
+		//"furrypride" = CRAYON_COST_LARGE, //MASSMETA EDIT (lgbt_removal)
 		"paint" = CRAYON_COST_LARGE,
 		"secborg" = CRAYON_COST_LARGE,
 		"yiffhell" = CRAYON_COST_LARGE,
@@ -425,12 +425,11 @@
 
 /obj/item/toy/crayon/proc/crayon_text_strip(text)
 	text = copytext(text, 1, MAX_MESSAGE_LEN)
-	//MASSMETA EDIT CHANGE BEGIN (ru_crayons)
-	/* ORIGINAL
-	var/static/regex/crayon_regex = new /regex(@"[^\w!?,.=&%#+/\-]", "ig")
-	*/
+	//MASSMETA EDIT BEGIN (ru_crayons)
+	//var/static/regex/crayon_regex = new /regex(@"[^\w!?,.=&%#+/\-]", "ig")
+
 	var/static/regex/crayon_regex = new /regex(@"[^\wА-Яа-яЁё!?,.=&%#+/\-]", "ig")
-	//MASSMETA EDIT CHANGE END
+	//MASSMETA EDIT END
 	
 	return LOWER_TEXT(crayon_regex.Replace(text, ""))
 

@@ -1,0 +1,2 @@
+#include "code\protos\shuttles.dm"
+#include "code\stroika\areas.dm"

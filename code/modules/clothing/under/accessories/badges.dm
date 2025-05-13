@@ -177,8 +177,6 @@
 	name = "Pre-Approved Cyborg Candidate dogtag"
 	display = "This employee has been screened for negative mental traits to an acceptable level of accuracy, and is approved for the NT Cyborg program as an alternative to medical resuscitation."
 
-//MASSMETA EDIT CHANGE BEGIN (lgbt_removal)
-/* ORIGINAL
 /obj/item/clothing/accessory/pride
 	name = "pride pin"
 	desc = "A Nanotrasen Diversity & Inclusion Center-sponsored holographic pin to show off your pride, reminding the crew of their unwavering commitment to equity, diversity, and inclusion!"
@@ -194,24 +192,6 @@
 		"Intersex Pride" = "pride_intersex",
 		"Lesbian Pride" = "pride_lesbian",
 	)
-*/
-/obj/item/clothing/accessory/pride // actually patriotic
-	name = "patriotic pin"
-	desc = "A Nanotrasen holographic pin to show off your patriotic."
-	icon = 'modular_meta/features/lgbt_removal/icons/pins.dmi'
-	worn_icon = 'modular_meta/features/lgbt_removal/icons/pins_clothing.dmi'
-	icon_state = "flag_russ"
-	unique_reskin = list(
-		"Russian flag" = "flag_russ",
-		"Imperial flag" = "flag_imper",
-		"China flag" = "flag_china",
-		"German flag" = "flag_germ",
-		"Serbian flag" = "flag_serb",
-		"Kazakh flag" = "flag_kaz",
-		"Iranian flag" = "flag_iran",
-		"Cuban Pete" = "flag_cuba",
-	)
-//MASSMETA EDIT CHANGE END
 
 /obj/item/clothing/accessory/pride/setup_reskinning()
 	if(!check_setup_reskinning())

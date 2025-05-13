@@ -415,14 +415,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/mirror/broken, 28)
 	race_flags = MIRROR_BADMIN
 
 /obj/structure/mirror/magic/pride
-//MASSMETA EDIT CHANGE BEGIN (lgbt_removal)
-	/* ORIGINAL
 	name = "pride's mirror"
 	desc = "Pride cometh before the..."
-	*/
-	name = "strange mirror"
-	desc = "You look a little different in this mirror"
-//MASSMETA EDIT CHANGE END
 	race_flags = MIRROR_PRIDE
 	mirror_options = PRIDE_MIRROR_OPTIONS
 	/// If the last user has altered anything about themselves

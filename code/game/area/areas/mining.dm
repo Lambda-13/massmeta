@@ -280,13 +280,6 @@
 	icon_state = "danger"
 	map_generator = /datum/map_generator/cave_generator/icemoon
 
-/// MASSMETA EDIT START: Расщелины - да, мобы - нет
-/area/icemoon/underground/unexplored/rivers/no_monsters
-	icon_state = "danger"
-	area_flags = UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED
-	map_generator = /datum/map_generator/cave_generator/icemoon
-/// MASSMETA EDIT END
-
 /area/icemoon/underground/unexplored/rivers/deep
 	map_generator = /datum/map_generator/cave_generator/icemoon/deep
 

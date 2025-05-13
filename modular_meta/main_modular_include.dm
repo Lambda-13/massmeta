@@ -23,6 +23,7 @@
 #include "features\lgbt_removal\includes.dm"
 #include "features\oguzok_cook\includes.dm"
 #include "features\quirk_augmented\includes.dm"
+#include "features\meta_maps\includes.dme"
 #include "features\soviet_crate\includes.dm"
 #include "features\uplink_items\includes.dm"
 #include "features\venom_knife\includes.dm"
@@ -31,7 +32,7 @@
 #include "features\not_enough_medical\includes.dm"
 #include "features\more_cell_interactions\includes.dm"
 #include "features\makeshift_grenade_trap\includes.dm"
-#include "features\tier5\includes.dm"
+#include "features\parts_tier_5\includes.dm"
 #include "features\copytech\includes.dm"
 #include "features\cargo_teleporter\includes.dm"
 #include "features\not_enough_decor\includes.dm"
@@ -42,7 +43,7 @@
 #include "reverts\re_beheading\includes.dm"
 #include "reverts\re_buff_lasers\includes.dm"
 #include "reverts\re_glasses_protect_welding\includes.dm"
-#include "reverts\re_hooch_heals_assistants\includes.dm"
+#include "reverts\hooch_heals_assistants\includes.dm"
 #include "reverts\re_satchels_num_back\includes.dm"
 
 /* --TRANSLATIONS-- */
