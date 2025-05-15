@@ -84,6 +84,6 @@
 	item_path = /obj/item/clothing/accessory/pocketprotector/full
 
 /datum/loadout_item/accessory/pride
-	name = "Patriotic Pin" //MASSMETA EDIT CHANGE - ORIGINAL: name = "Pride Pin"
+	name = "Pride Pin"
 	item_path = /obj/item/clothing/accessory/pride
 	can_be_reskinned = TRUE

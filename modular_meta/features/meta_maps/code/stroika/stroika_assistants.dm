@@ -1,4 +1,4 @@
-// MASSMETA EDIT: Оутфит для ассистента на карте стройка
+// Оутфит для ассистента на карте стройка
 
 /datum/outfit/job/assistant/assistant_stroika
 	name = "Assistant (Stroika)"

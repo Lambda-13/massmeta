@@ -19,3 +19,6 @@
 		"Iranian flag" = "flag_iran",
 		"Cuban Pete" = "flag_cuba",
 	)
+
+/datum/loadout_item/accessory/pride
+	name = "Patriotic Pin"

@@ -17,3 +17,13 @@
 datum/map_template/shuttle/mining_common/protos
 	suffix = "protos"
 	name = "lavaland shuttle (Protos)"
+
+/obj/docking_port/stationary/laborcamp_home/protos
+	roundstart_template = /datum/map_template/shuttle/labour/protos
+
+/obj/docking_port/stationary/mining_home/protos
+	roundstart_template = /datum/map_template/shuttle/mining/protos
+	height = 4
+
+/obj/docking_port/stationary/mining_home/common/protos
+	roundstart_template = /datum/map_template/shuttle/mining_common/protos
