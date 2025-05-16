@@ -67,9 +67,9 @@
 	var/mine_rate = 1
 
 /obj/machinery/mineral/bluespace_miner/Initialize(mapload)
-    . = ..()
-    START_PROCESSING(SSmachines, src)
-    materials = AddComponent(/datum/component/remote_materials, "bsm", mapload)
+	. = ..()
+	START_PROCESSING(SSmachines, src)
+	materials = AddComponent(/datum/component/remote_materials, "bsm", mapload)
 
 /obj/machinery/mineral/bluespace_miner/Destroy()
 	materials = null
