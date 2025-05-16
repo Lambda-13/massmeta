@@ -32,7 +32,7 @@ interface AutodocProps {
 }
 
 export const Autodoc: React.FC<AutodocProps> = ({ context }) => {
-  const { act, data } = useBackend<AutodocData>(context);
+  const { act, data } = useBackend<AutodocData>();
   const operations = data.surgeries;
 
   if (data.mode === 1) {

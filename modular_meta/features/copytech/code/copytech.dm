@@ -155,8 +155,8 @@
 /obj/machinery/copytech/RefreshParts()
 	. = ..()
 	var/T = 0
-	for(var/obj/item/stock_parts/micro_laser/M in component_parts)
-		T += M.rating
+	for(var/datum/stock_part/micro_laser/laser in component_parts)
+		T += laser.tier
 	tier_rate = T
 
 /proc/get_replication_speed(tier)
@@ -228,8 +228,8 @@
 /obj/machinery/copytech_platform/RefreshParts()
 	. = ..()
 	var/T = 0
-	for(var/obj/item/stock_parts/micro_laser/M in component_parts)
-		T += M.rating
+	for(var/datum/stock_part/micro_laser/laser in component_parts)
+		T += laser.tier
 	tier_rate = T
 
 /obj/machinery/copytech_platform/proc/movable_crossed(datum/source, atom/movable/AM)

@@ -28,7 +28,7 @@
 					amount_per_transfer_from_this = possible_transfer_amounts[i+1]
 				else
 					amount_per_transfer_from_this = possible_transfer_amounts[1]
-				balloon_alert(user, "Transferring [amount_per_transfer_from_this]u.")
+				balloon_alert(user, "transferring [amount_per_transfer_from_this]u.")
 				to_chat(user, "<span class='notice'>[src]'s transfer amount is now [amount_per_transfer_from_this] units.</span>")
 				return
 

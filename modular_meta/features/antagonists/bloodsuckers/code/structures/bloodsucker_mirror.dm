@@ -277,19 +277,19 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/bloodsucker/mirror/broken, 28)
 		return FALSE
 
 	if(!observed.get_organ_slot(ORGAN_SLOT_EYES))
-		balloon_alert(user, span_warning("[observed.name] has no eyes!"))
+		balloon_alert(user, "[observed.name] has no eyes!")
 		return FALSE
 
 	if(broken)
-		balloon_alert(user, span_warning("[src] has broken!"))
+		balloon_alert(user, "[src] has broken!")
 		return FALSE
 
 	if(!in_range(src, user))
-		user.balloon_alert(user, span_warning("you're too far from [src]!"))
+		user.balloon_alert(user, "you're too far from [src]!")
 		return FALSE
 
 	if(!user.mind.has_antag_datum(/datum/antagonist/bloodsucker)) //Unlikely, but still...
-		balloon_alert(user, span_warning("you aren't a bloodsucker anymore!"))
+		balloon_alert(user, "you aren't a bloodsucker anymore!")
 		return FALSE
 	return TRUE
 
@@ -377,7 +377,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/bloodsucker/mirror/broken, 28)
  * * victim - The person affected by this proc.
  * * aggressive - Increases mirror damage if true.
  */
-/obj/structure/bloodsucker/mirror/proc/katabasis(mob/living/carbon/human/victim, var/aggressive = FALSE)
+/obj/structure/bloodsucker/mirror/proc/katabasis(mob/living/carbon/human/victim, aggressive = FALSE)
 	//Damage
 	if((victim.maxHealth - victim.get_total_damage()) >= victim.crit_threshold)
 		var/refined_damage_amount = (victim.maxHealth - victim.get_total_damage()) * (aggressive ? 0.45 : 0.35)

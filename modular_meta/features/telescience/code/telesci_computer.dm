@@ -34,7 +34,7 @@
 	var/crystals = 0
 	var/obj/item/gps/inserted_gps
 
-/obj/machinery/computer/telescience/Initialize()
+/obj/machinery/computer/telescience/Initialize(mapload)
 	recalibrate()
 	. = ..()
 	AddComponent(/datum/component/usb_port, list(

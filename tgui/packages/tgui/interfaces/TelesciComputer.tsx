@@ -31,7 +31,7 @@ type TelepadData = {
 };
 
 export const TelesciComputer = (_props: any, context: any) => {
-  const { act, data } = useBackend<TelepadData>(context);
+  const { act, data } = useBackend<TelepadData>();
   const {
     telepad,
     power_options,

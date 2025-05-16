@@ -9,7 +9,7 @@
 	discount_experiments = list(
 		/datum/experiment/ordnance/gaseous/bz = TECHWEB_TIER_2_POINTS,
 		/datum/experiment/ordnance/gaseous/nitrous_oxide = TECHWEB_TIER_3_POINTS,
-    )
+	)
 
 //ORIGINAL FILE: code/modules/research/techweb/nodes/biology_nodes.dm
 /datum/techweb_node/xenobiology
@@ -63,7 +63,7 @@
 	discount_experiments = list(
 		/datum/experiment/scanning/random/plants/wild = TECHWEB_TIER_2_POINTS,
 		/datum/experiment/scanning/random/plants/traits = TECHWEB_TIER_3_POINTS,
-    )
+	)
 
 //ORIGINAL FILE: code/modules/research/techweb/nodes/surgery_nodes.dm
 /datum/techweb_node/surgery_adv

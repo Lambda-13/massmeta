@@ -14,6 +14,7 @@ import {
 
 import { useBackend, useLocalState } from '../backend';
 import { Window } from '../layouts';
+import { SearchBar } from './common/SearchBar';
 
 type Data = {
   categories: string[];
@@ -75,14 +76,6 @@ const FeaturesTable = () => {
 
   const [searchText, setSearchText] = useLocalState('searchText', '');
 
-  const searchBar = (
-    <Input
-      placeholder="Искать модпак-фичу..."
-      fluid
-      onInput={(e, value) => setSearchText(value)}
-    />
-  );
-
   if (features.length === 0) {
     return (
       <NoticeBox>
@@ -94,7 +87,14 @@ const FeaturesTable = () => {
   return (
     <Stack fill vertical>
       <Stack.Item>
-        <Section fill>{searchBar}</Section>
+        <Section fill>
+		  <SearchBar
+		    query={searchText}
+            onSearch={setSearchText}
+            placeholder={'Искать модпак-фичу...'}
+		  />
+		  Искать модпак-фичу...
+		</Section>
       </Stack.Item>
       <Stack.Item grow>
         <Section
@@ -169,14 +169,6 @@ const TranslationsTable = () => {
 
   const [searchText, setSearchText] = useLocalState('searchText', '');
 
-  const searchBar = (
-    <Input
-      placeholder="Искать модпак-перевод..."
-      fluid
-      onInput={(e, value) => setSearchText(value)}
-    />
-  );
-
   if (translations.length === 0) {
     return (
       <NoticeBox>
@@ -188,7 +180,13 @@ const TranslationsTable = () => {
   return (
     <Stack fill vertical>
       <Stack.Item>
-        <Section fill>{searchBar}</Section>
+        <Section fill>
+		  <SearchBar
+		    query={searchText}
+            onSearch={setSearchText}
+            placeholder={'Искать модпак-перевод...'}
+		  />
+		</Section>
       </Stack.Item>
       <Stack.Item grow>
         <Section
@@ -265,14 +263,6 @@ const RevertsTable = () => {
 
   const [searchText, setSearchText] = useLocalState('searchText', '');
 
-  const searchBar = (
-    <Input
-      placeholder="Искать модпак-скилл ишуя ТГ к*дера..."
-      fluid
-      onInput={(e, value) => setSearchText(value)}
-    />
-  );
-
   if (reverts.length === 0) {
     return (
       <NoticeBox>
@@ -284,7 +274,13 @@ const RevertsTable = () => {
   return (
     <Stack fill vertical>
       <Stack.Item>
-        <Section fill>{searchBar}</Section>
+        <Section fill>
+		  <SearchBar
+		    query={searchText}
+            onSearch={setSearchText}
+            placeholder={'Искать модпак-скилл ишуя ТГ к*дера...'}
+		  />
+		</Section>
       </Stack.Item>
       <Stack.Item grow>
         <Section

@@ -25,16 +25,16 @@
 */
 	//Скорость работы (300 -> 225 -> 150 -> 75 -> 30)
 	var/T = -2
-	for(var/obj/item/stock_parts/micro_laser/Ml in component_parts)
-		T += Ml.rating
+	for(var/datum/stock_part/micro_laser/laser in component_parts)
+		T += laser.tier
 	surgerytime = initial(surgerytime) - (initial(surgerytime)*(T))/8
 	if(surgerytime <= 30)
 		surgerytime = 30
 
 	//Энергопотребление (10к -> 7.5к -> 5к -> 2.5к -> 1к)
 	var/P = -1
-	for(var/obj/item/stock_parts/capacitor/cap in component_parts)
-		P += cap.rating
+	for(var/datum/stock_part/capacitor/capacitor in component_parts)
+		P += capacitor.tier
 	active_power_usage = initial(active_power_usage) - (initial(active_power_usage)*(P))/4
 	if(active_power_usage <= 1000)
 		active_power_usage = 1000
