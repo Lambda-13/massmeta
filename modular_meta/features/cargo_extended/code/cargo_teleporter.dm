@@ -48,8 +48,15 @@ GLOBAL_LIST_EMPTY(cargo_marks)
 	if(!COOLDOWN_FINISHED(src, use_cooldown))
 		to_chat(user, span_warning("[capitalize(src.name)] recharges!"))
 		return
+	var/choice = tgui_input_list(user, "To which mark will we teleport this?", "Selecting a marker", GLOB.cargo_marks)
+	if(!choice)
+		return ..()
+	if(get_dist(user, target) > 1)
+		return
+	var/turf/moving_turf = get_turf(choice)
 	var/turf/target_turf = get_turf(target)
 	for(var/check_content in target_turf.contents)
+		icon_state = "cargo-on"
 		if(isobserver(check_content))
 			continue
 		if(!ismovable(check_content))
@@ -57,17 +64,13 @@ GLOBAL_LIST_EMPTY(cargo_marks)
 		var/atom/movable/movable_content = check_content
 		if(isliving(movable_content))
 			to_chat(user, span_warning("Teleport displays an error: This is a creature!"))
-			return ..()
+			continue
 		if(length(movable_content.get_all_contents_type(/mob/living)))
 			to_chat(user, span_warning("Teleport displays an error: There is a creature inside!"))
-			return ..()
-		var/choice = tgui_input_list(user, "To which mark will we teleport this?", "Selecting a marker", GLOB.cargo_marks)
-		var/turf/moving_turf = get_turf(choice)
-		if(!choice)
-			return ..()
-		icon_state = "cargo-on"
-		if(get_dist(user, target) > 1)
-			return
+			continue
+		if(movable_content.anchored)
+			to_chat(user, span_warning("Teleport displays an error: This is bolted to the floor!"))
+			continue
 		do_teleport(movable_content, moving_turf, asoundout = 'sound/items/modsuit/tem_shot.ogg')
 		icon_state = "cargo-off"
 		new /obj/effect/particle_effect/sparks(target_turf)

@@ -2,7 +2,7 @@
 	name = "Contractor"
 	weight = 10
 
-/datum/uplink_item/bundles_tc/contract_kit
+/* /datum/uplink_item/bundles_tc/contract_kit
 	name = "Contract Kit"
 	desc = "The Syndicate have offered you the chance to become a contractor, take on kidnapping contracts for TC \
 		and cash payouts. Upon purchase, you'll be granted your own contract uplink embedded within the supplied \
@@ -14,7 +14,7 @@
 	category = /datum/uplink_category/contractor
 	cost = 20
 	purchasable_from = UPLINK_TRAITORS
-	population_minimum = TRAITOR_POPULATION_LOWPOP
+	population_minimum = TRAITOR_POPULATION_LOWPOP */ //MASSMETA EDIT - No more contract kit
 
 /datum/uplink_item/bundles_tc/contract_kit/purchase(mob/user, datum/uplink_handler/uplink_handler, atom/movable/source)
 	. = ..()
