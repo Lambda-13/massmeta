@@ -350,7 +350,7 @@ GLOBAL_LIST_INIT(autodoc_supported_surgery_steps, typecacheof(list(
 		return
 	open_machine()
 
-/obj/machinery/autodoc/open_machine()
+/obj/machinery/autodoc/open_machine(drop = TRUE, density_to_set = FALSE)
 	if(state_open)
 		return FALSE
 	..(FALSE)

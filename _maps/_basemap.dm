@@ -22,7 +22,7 @@
 		#include "map_files\ProtoBoxStation\ProtoBoxStation.dmm"
 		#include "map_files\hotmeta\hotmeta.dmm"
 		#include "map_files\protosstation\protos.dmm"
-		#include "_maps\map_files\bearcat\bearcat.dmm"
+		#include "map_files\bearcat\bearcat.dmm"
 		//MASSMETA EDIT ADDITON END
 
 	#endif

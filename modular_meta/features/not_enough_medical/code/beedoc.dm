@@ -101,7 +101,7 @@
 	use_energy(active_power_usage)
 	open_machine()
 
-/obj/machinery/organdoc/open_machine(mob/user)
+/obj/machinery/organdoc/open_machine(mob/user, drop = TRUE, density_to_set = FALSE)
 	if(processing)
 		occupant.visible_message(span_notice("<b>[user]</b> cancels organdoc the inserting procedure.") , span_notice("Organdoc stops inserting into my body."))
 		processing = FALSE

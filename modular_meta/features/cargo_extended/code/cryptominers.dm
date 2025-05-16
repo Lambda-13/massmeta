@@ -101,7 +101,7 @@
 	QDEL_NULL(cargo_radio)
 	return ..()
 
-/obj/machinery/cryptominer/deconstruct()
+/obj/machinery/cryptominer/deconstruct(disassembled = TRUE)
 	STOP_PROCESSING(SSmachines,src)
 	return ..()
 
