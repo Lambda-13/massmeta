@@ -34,10 +34,11 @@
 #include "features\makeshift_grenade_trap\includes.dm"
 #include "features\parts_tier_5\includes.dm"
 #include "features\copytech\includes.dm"
-#include "features\cargo_teleporter\includes.dm"
+#include "features\cargo_extended\includes.dm"
 #include "features\not_enough_decor\includes.dm"
 #include "features\mod_vend\includes.dm"
 #include "features\roundstart_shell\includes.dm"
+#include "features\telescience\includes.dm"
 /* -- REVERTS -- */
 
 #include "reverts\re_beheading\includes.dm"

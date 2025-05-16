@@ -121,3 +121,5 @@
 #define TECHWEB_NODE_UNREGULATED_BLUESPACE "unregulated_bluespace"
 #define TECHWEB_NODE_XENOBIOLOGY "xenobiology"
 #define TECHWEB_NODE_PARTS_NONEUCLID "parts_noneuclid" // MASSMETA EDIT: Tier 5 parts
+#define TECHWEB_NODE_AUTOMINERS "automining" // MASSMETA EDIT: Miners
+#define TECHWEB_NODE_SYNDIE_MINERS "syndie_mining" // MASSMETA EDIT: Miners

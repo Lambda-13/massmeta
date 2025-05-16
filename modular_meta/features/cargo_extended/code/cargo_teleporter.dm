@@ -1,10 +1,10 @@
 GLOBAL_LIST_EMPTY(cargo_marks)
-#define MAX_CARGO_MARKER 3
+#define MAX_CARGO_MARKER 6
 
 /obj/item/cargo_teleporter
-	name = "cargo teleporter"
+	name = "Cargo teleporter"
 	desc = "A device that can set a certain number of markers, allowing items to be teleported to the set markers."
-	icon = 'modular_meta/features/cargo_teleporter/icons/cargo_teleporter.dmi'
+	icon = 'modular_meta/features/cargo_extended/icons/cargo_teleporter.dmi'
 	icon_state = "cargo-off"
 	///the list of markers spawned by this item
 	var/list/marker_children = list()
@@ -48,15 +48,8 @@ GLOBAL_LIST_EMPTY(cargo_marks)
 	if(!COOLDOWN_FINISHED(src, use_cooldown))
 		to_chat(user, span_warning("[capitalize(src.name)] recharges!"))
 		return
-	var/choice = tgui_input_list(user, "To which mark will we teleport this?", "Selecting a marker", GLOB.cargo_marks)
-	if(!choice)
-		return ..()
-	if(get_dist(user, target) > 1)
-		return
-	var/turf/moving_turf = get_turf(choice)
 	var/turf/target_turf = get_turf(target)
 	for(var/check_content in target_turf.contents)
-		icon_state = "cargo-on"
 		if(isobserver(check_content))
 			continue
 		if(!ismovable(check_content))
@@ -64,20 +57,24 @@ GLOBAL_LIST_EMPTY(cargo_marks)
 		var/atom/movable/movable_content = check_content
 		if(isliving(movable_content))
 			to_chat(user, span_warning("Teleport displays an error: This is a creature!"))
-			continue
+			return ..()
 		if(length(movable_content.get_all_contents_type(/mob/living)))
 			to_chat(user, span_warning("Teleport displays an error: There is a creature inside!"))
-			continue
-		if(movable_content.anchored)
-			to_chat(user, span_warning("Teleport displays an error: This is bolted to the floor!"))
-			continue
+			return ..()
+		var/choice = tgui_input_list(user, "To which mark will we teleport this?", "Selecting a marker", GLOB.cargo_marks)
+		var/turf/moving_turf = get_turf(choice)
+		if(!choice)
+			return ..()
+		icon_state = "cargo-on"
+		if(get_dist(user, target) > 1)
+			return
 		do_teleport(movable_content, moving_turf, asoundout = 'sound/items/modsuit/tem_shot.ogg')
 		icon_state = "cargo-off"
-	new /obj/effect/decal/cleanable/ash(target_turf)
+		new /obj/effect/particle_effect/sparks(target_turf)
 	COOLDOWN_START(src, use_cooldown, 1 SECONDS)
 
 /datum/design/cargo_teleporter
-	name = "сargo teleporter"
+	name = "Cargo teleporter"
 	desc = "A device that can place markers and teleport items to those markers."
 	id = "cargotele"
 	build_type = PROTOLATHE
