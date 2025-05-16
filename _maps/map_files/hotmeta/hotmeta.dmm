@@ -66251,7 +66251,7 @@
 /obj/item/nullrod/pride_hammer{
 	name = "Chemists bane";
 	chaplain_spawnable = 0;
-	color = white
+	color = "white"
 	},
 /turf/open/floor/iron/dark/textured_edge{
 	dir = 4

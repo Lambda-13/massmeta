@@ -3,7 +3,6 @@ import { useState } from 'react';
 import {
   Box,
   Collapsible,
-  Input,
   LabeledList,
   NoticeBox,
   Section,
@@ -88,13 +87,12 @@ const FeaturesTable = () => {
     <Stack fill vertical>
       <Stack.Item>
         <Section fill>
-		  <SearchBar
-		    query={searchText}
+          <SearchBar
+            query={searchText}
             onSearch={setSearchText}
             placeholder={'Искать модпак-фичу...'}
-		  />
-		  Искать модпак-фичу...
-		</Section>
+          />
+        </Section>
       </Stack.Item>
       <Stack.Item grow>
         <Section
@@ -181,12 +179,12 @@ const TranslationsTable = () => {
     <Stack fill vertical>
       <Stack.Item>
         <Section fill>
-		  <SearchBar
-		    query={searchText}
+          <SearchBar
+            query={searchText}
             onSearch={setSearchText}
             placeholder={'Искать модпак-перевод...'}
-		  />
-		</Section>
+          />
+        </Section>
       </Stack.Item>
       <Stack.Item grow>
         <Section
@@ -275,12 +273,12 @@ const RevertsTable = () => {
     <Stack fill vertical>
       <Stack.Item>
         <Section fill>
-		  <SearchBar
-		    query={searchText}
+          <SearchBar
+            query={searchText}
             onSearch={setSearchText}
             placeholder={'Искать модпак-скилл ишуя ТГ к*дера...'}
-		  />
-		</Section>
+          />
+        </Section>
       </Stack.Item>
       <Stack.Item grow>
         <Section
