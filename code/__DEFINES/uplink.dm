@@ -45,7 +45,7 @@
 
 /// The standard minimum player count for "don't spawn this item on low population rounds"
 
-//MASSMETA EDIT BEGIN (TRAITOR_POPULATION_LOWPOP)
+//MASSMETA EDIT BEGIN (antagonists_balance)
 //#define TRAITOR_POPULATION_LOWPOP 20
 
 #define TRAITOR_POPULATION_LOWPOP 5

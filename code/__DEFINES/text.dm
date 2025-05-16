@@ -80,7 +80,11 @@
 /// File location for oguzok phrases
 #define OGUZOK_PHRASES_FILE "massmeta/oguzok.json" //MASSMETA EDIT ADDITION (oguzok)
 /// File location for brain damage traumas
-#define BRAIN_DAMAGE_FILE "massmeta/traumas_ru.json" //MASSMETA EDIT CHANGE (ru_traumas) - ORIGINAL: #define BRAIN_DAMAGE_FILE "traumas.json"
+//MASSMETA EDIT BEGIN (ru_traumas)
+//#define BRAIN_DAMAGE_FILE "traumas.json"
+
+#define BRAIN_DAMAGE_FILE "massmeta/traumas_ru.json"
+//MASSMETA EDIT END
 /// File location for AI ion laws
 //MASSMETA EDIT (ru_ai_laws + ru_traitor_words)
 //#define ION_FILE "ion_laws.json"
