@@ -31,7 +31,7 @@ type TelepadData = {
 };
 
 export const TelesciComputer = (_props: any, context: any) => {
-  const { act, data } = useBackend<TelepadData>(context);
+  const { act, data } = useBackend<TelepadData>();
   const {
     telepad,
     power_options,
@@ -70,10 +70,29 @@ export const TelesciComputer = (_props: any, context: any) => {
               title="Telepad Controls"
               buttons={
                 <>
-                  <Button icon="eject" tooltip="Eject crystals" onClick={() => act('eject')} />
-                  <Button icon="sync" tooltip="Recalibrate" color="yellow" onClick={() => act('recal')} />
-                  <Button icon="arrow-up" content="Send" color="green" onClick={() => act('send')} />
-                  <Button icon="arrow-down" content="Receive" color="blue" onClick={() => act('receive')} />
+                  <Button
+                    icon="eject"
+                    tooltip="Eject crystals"
+                    onClick={() => act('eject')}
+                  />
+                  <Button
+                    icon="sync"
+                    tooltip="Recalibrate"
+                    color="yellow"
+                    onClick={() => act('recal')}
+                  />
+                  <Button
+                    icon="arrow-up"
+                    content="Send"
+                    color="green"
+                    onClick={() => act('send')}
+                  />
+                  <Button
+                    icon="arrow-down"
+                    content="Receive"
+                    color="blue"
+                    onClick={() => act('receive')}
+                  />
                 </>
               }
             >
@@ -97,11 +116,13 @@ export const TelesciComputer = (_props: any, context: any) => {
                     maxValue={360}
                     step={1}
                     stepPixelSize={1}
-                    onDrag={(e, value) => act('setrotation', { newrotation: value })}
+                    onDrag={(e, value) =>
+                      act('setrotation', { newrotation: value })
+                    }
                   />
                 </LabeledList.Item>
                 <LabeledList.Item label="Power">
-                  {power_options.map(opt => {
+                  {power_options.map((opt) => {
                     const maxAllowedPower = crystals * 5 * efficiency;
                     const isAvailable = opt <= maxAllowedPower;
                     const isSelected = opt === power;

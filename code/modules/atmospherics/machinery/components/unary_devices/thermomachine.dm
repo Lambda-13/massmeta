@@ -85,7 +85,7 @@
 	. = ..()
 	var/calculated_bin_rating = 0
 	for(var/datum/stock_part/matter_bin/bin in component_parts)
-		// MASSMETA EDIT START
+		// MASSMETA EDIT BEGIN (parts_tier_5)
 		// Добавил проверку на то что если маттербин больше 4 тира
 		// То он будет добавлять только 4 тир
 		// Костыль для работы 5 тира

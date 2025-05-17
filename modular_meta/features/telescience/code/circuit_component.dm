@@ -17,7 +17,7 @@
 
 	var/obj/machinery/computer/telescience/attached_console
 
-/obj/item/circuit_component/telepad_console/Initialize()
+/obj/item/circuit_component/telepad_console/Initialize(mapload)
 	. = ..()
 	elevation = add_input_port("Elevation", PORT_TYPE_NUMBER)
 	rotation = add_input_port("Rotation", PORT_TYPE_NUMBER)

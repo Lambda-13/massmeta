@@ -94,6 +94,16 @@
 	GLOB.silicon_mobs -= src
 	return ..()
 
+///Sets cyborg gender from preferences. Expects a client.
+/mob/living/silicon/proc/set_gender(client/player_client)
+	var/silicon_pronouns = player_client.prefs.read_preference(/datum/preference/choiced/silicon_gender)
+	if(silicon_pronouns == /datum/preference/choiced/silicon_gender::use_character_gender)
+		gender = player_client.prefs.read_preference(/datum/preference/choiced/gender)
+		return
+	var/silicon_gender = /datum/preference/choiced/silicon_gender::pronouns_to_genders[silicon_pronouns]
+	if(!isnull(silicon_gender))
+		gender = silicon_gender
+
 /mob/living/silicon/proc/on_silicon_shocked(datum/source, shock_damage, shock_source, siemens_coeff, flags)
 	SIGNAL_HANDLER
 	for(var/mob/living/living_mob in buckled_mobs)
@@ -275,7 +285,11 @@
 	var/list/lawcache_hackedcheck = hackedcheck.Copy()
 	var/forced_log_message = "stating laws[force ? ", forced" : ""]"
 	//"radiomod" is inserted before a hardcoded message to change if and how it is handled by an internal radio.
-	say("[radiomod] Действующие законы:", forced = forced_log_message) //MASSMETA EDIT (ru_ai_laws)
+	//MASSMETA EDIT BEGIN (ru_ai_laws)
+	//say("[radiomod] Current Active Laws:", forced = forced_log_message)
+
+	say("[radiomod] Действующие законы:", forced = forced_log_message)
+	//MASSMETA EDIT END
 	sleep(1 SECONDS)
 
 	if (lawcache_zeroth)

@@ -100,13 +100,11 @@ GLOBAL_LIST_INIT(holiday_mail, list())
 	switch(pattern)
 		if(PATTERN_RANDOM)
 			return "#[random_short_color()]"
-		//MASSMETA EDIT REMOVAL BEGIN (lgbt_removal)
-		/*
-		if(PATTERN_RAINBOW)
-			var/datum/holiday/pride_week/rainbow_datum = new()
-			return rainbow_datum.get_holiday_colors(thing_to_color, PATTERN_DEFAULT)
-		*/
-		//MASSMETA EDIT REMOVAL END
+		//MASSMETA EDIT BEGIN (lgbt_removal)
+		// if(PATTERN_RAINBOW)
+			// var/datum/holiday/pride_week/rainbow_datum = new()
+			// return rainbow_datum.get_holiday_colors(thing_to_color, PATTERN_DEFAULT)
+		//MASSMETA EDIT END
 	if(!length(GLOB.holidays))
 		return
 	for(var/holiday_key in GLOB.holidays)
@@ -437,8 +435,6 @@ GLOBAL_LIST_INIT(holiday_mail, list())
 	begin_month = JUNE
 	holiday_hat = /obj/item/clothing/head/costume/garland
 
-//MASSMETA EDIT REMOVAL BEGIN (lgbt_removal)
-/*
 /datum/holiday/pride_week
 	name = PRIDE_WEEK
 	begin_month = JUNE
@@ -467,8 +463,6 @@ GLOBAL_LIST_INIT(holiday_mail, list())
 		/obj/item/food/snowcones/rainbow,
 		/obj/item/toy/crayon/rainbow,
 	)
-*/
-//MASSMETA EDIT REMOVAL END
 
 // JULY
 

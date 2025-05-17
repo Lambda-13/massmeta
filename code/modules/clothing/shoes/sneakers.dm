@@ -77,7 +77,7 @@
 
 /obj/item/clothing/shoes/sneakers/rainbow
 	name = "rainbow shoes"
-	desc = "Very colorful shoes." //MASSMETA EDIT CHANGE (lgbt_removal) - ORIGINAL: desc = "Very gay shoes."
+	desc = "Very gay shoes."
 	icon_state = "rain_bow"
 	inhand_icon_state = "rainbow_sneakers"
 

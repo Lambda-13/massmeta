@@ -4761,7 +4761,7 @@
 	pixel_x = 8;
 	pixel_y = 2
 	},
-/obj/item/reagent_containers/cup/rag{
+/obj/item/rag{
 	pixel_x = -4
 	},
 /obj/machinery/power/apc/auto_name/directional/north,

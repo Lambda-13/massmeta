@@ -92,7 +92,7 @@
 	var/ionthinksof = pick_list(ION_FILE, "ionthinksof")
 	//Musts are funny things the AI or crew has to do.
 	var/ionmust = pick_list(ION_FILE, "ionmust")
-	//ЗАПРАШИВАЕТ are basically all dumb internet memes.
+	//Require are basically all dumb internet memes.
 	var/ionrequire = pick_list(ION_FILE, "ionrequire")
 	//Things are NOT objects; instead, they're specific things that either harm humans or
 	//must be done to not harm humans. Make sure they're plural and "not" can be tacked
@@ -115,6 +115,9 @@
 	var/ionpet = pick_list(ION_FILE, "ionpet")
 
 	var/message = ""
+
+//MASSMETA EDIT BEGIN (ru_ai_laws)
+// далее очень много точечных изменений, все что на руссом = изменено
 
 	switch(rand(1,46))
 		if(1 to 3) //There are # X on the station
@@ -586,6 +589,6 @@
 						message = "[ionpet] НАСТОЯЩИЙ АМЕРИКАНЕЦ"
 					if(6)
 						message = "[ionpet] СКОРЛУПА"
+	//MASSMETA EDIT END
 
 	return message
-
