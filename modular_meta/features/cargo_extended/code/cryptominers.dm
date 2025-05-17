@@ -79,7 +79,7 @@
 	cargo_radio = new /obj/item/radio(src)
 
 	// Prevent radio listening
-	cargo_radio.listening = 0
+	cargo_radio.set_listening(FALSE)
 
 	// Set radio frequency
 	cargo_radio.set_frequency(FREQ_SUPPLY)

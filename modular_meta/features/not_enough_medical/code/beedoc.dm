@@ -48,7 +48,7 @@
 	else if(storedorgan)
 		. += "<hr><span class='notice'>The green light signals that the [src.name] is ready to insert the [storedorgan].</span>"
 
-/obj/machinery/organdoc/close_machine(mob/user)
+/obj/machinery/organdoc/close_machine(mob/user, density_to_set = TRUE)
 	..()
 	playsound(src, 'sound/machines/click.ogg', 50)
 	if(occupant)

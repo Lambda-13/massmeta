@@ -15,6 +15,7 @@
 	var/image/I = image(icon = icon, icon_state = "lavalamp-[light_on ? "on" : "off"]")
 	I.color = light_color
 	overlays += I
+	return ..()
 
 /obj/item/flashlight/lamp/lava/red
 	desc = "A kitchy red decorative light."

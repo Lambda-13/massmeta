@@ -79,12 +79,16 @@
 /obj/machinery/mineral/bluespace_miner/update_icon_state()
 	if(panel_open)
 		icon_state = "bsm_t"
+		return ..()
 	else if(!powered())
 		icon_state = "bsm_off"
+		return ..()
 	else if(!materials?.silo || materials?.on_hold())
 		icon_state = "bsm_idle"
+		return ..()
 	else
 		icon_state = "bsm_on"
+		return ..()
 
 /obj/machinery/mineral/bluespace_miner/RefreshParts()
 	. = ..()

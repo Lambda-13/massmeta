@@ -14,7 +14,7 @@
 	suffix = "protos"
 	name = "mining shuttle (Protos)"
 
-datum/map_template/shuttle/mining_common/protos
+/datum/map_template/shuttle/mining_common/protos
 	suffix = "protos"
 	name = "lavaland shuttle (Protos)"
 

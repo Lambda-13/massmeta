@@ -108,7 +108,7 @@
 		result.pixel_x = initial(O.pixel_x)
 		result.pixel_y = initial(O.pixel_y)
 		var/mutable_appearance/scanline = mutable_appearance('icons/effects/effects.dmi',"transform_effect")
-		O.transformation_animation(result, time = get_replication_speed(tier_rate), scanline.appearance)
+		O.transformation_animation(result, get_replication_speed(tier_rate), scanline.appearance)
 		active_item = O
 		crystals--
 		siphoned_power = 0
@@ -127,7 +127,7 @@
 		result.pixel_x = initial(M.pixel_x)
 		result.pixel_y = initial(M.pixel_y)
 		var/mutable_appearance/scanline = mutable_appearance('icons/effects/effects.dmi',"transform_effect")
-		M.transformation_animation(result, time = get_replication_speed(tier_rate), transform_overlay = scanline)
+		M.transformation_animation(result, get_replication_speed(tier_rate), scanline.appearance)
 		active_item = M
 		crystals--
 		siphoned_power = 0
@@ -340,7 +340,7 @@
 	D.layer = ABOVE_MOB_LAYER
 	var/mutable_appearance/result = mutable_appearance('icons/effects/effects.dmi',"nothing")
 	var/mutable_appearance/scanline = mutable_appearance('icons/effects/effects.dmi',"transform_effect")
-	D.transformation_animation(result, time = get_replication_speed(tier_rate), transform_overlay = scanline)
+	D.transformation_animation(result, get_replication_speed(tier_rate), scanline.appearance)
 	active_item = D
 	siphoned_power = 0
 	timer = addtimer(CALLBACK(src, PROC_REF(finish_work), D), get_replication_speed(tier_rate), TIMER_STOPPABLE)
