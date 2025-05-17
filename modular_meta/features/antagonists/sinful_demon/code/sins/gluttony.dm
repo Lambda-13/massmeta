@@ -27,7 +27,7 @@
 	icon_living = "lesserdaemon_gluttony"
 	speed = 1.25
 
-/mob/living/simple_animal/lesserdemon/gluttony/UnarmedAttack(atom/L, proximity_flag, list/modifiers)
+/mob/living/simple_animal/lesserdemon/gluttony/UnarmedAttack(mob/living/L)
 	if(isliving(L)) //Eat Corpses of agents 220 to regen health
 		if(L.stat == DEAD)
 			if(do_after(src, 3 SECONDS, L))

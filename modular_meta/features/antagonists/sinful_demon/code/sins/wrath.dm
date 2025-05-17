@@ -37,9 +37,11 @@
 
 	if(!isliving(target))
 		return FALSE
-	var/mob/living/target = target
-	target.adjust_fire_stacks(WRATHFUL_FIRE_AMOUNT)
-	target.ignite_mob()
+	
+	var/mob/living/T = target
+
+	T.adjust_fire_stacks(WRATHFUL_FIRE_AMOUNT)
+	T.ignite_mob()
 
 	return TRUE
 

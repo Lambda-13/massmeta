@@ -47,7 +47,8 @@
 						span_cult("As \the [W] hits you, you feel holy power blast through your form, tearing it apart!"))
 		adjustBruteLoss(22) //22(0) extra damage from the nullrod while in your true form of massmeta. On average this means 40 damage is taken now.
 
-/mob/living/simple_animal/lesserdemon/UnarmedAttack(atom/L, proximity_flag, list/modifiers)//10 hp healed from landing a hit.
+/mob/living/simple_animal/lesserdemon/UnarmedAttack(mob/living/L, proximity)
+//10 hp healed from landing a hit.
 	if(isliving(L))
 		if(L.stat != DEAD && !L.can_block_magic(MAGIC_RESISTANCE_HOLY|MAGIC_RESISTANCE_MIND)) //demons do not gain succor from the dead or holy
 			adjustHealth(-maxHealth * 0.05)
