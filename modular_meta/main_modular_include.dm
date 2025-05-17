@@ -10,12 +10,16 @@
 /* --FEATURES-- */
 
 #include "features\additional_circuit\includes.dm"
-#include "features\admin_smites\includes.dm"
+#include "features\admin\includes.dm"
+#include "features\ai_announcer\includes.dm"
 #include "features\antagonists\includes.dm"
 #include "features\antagonists_balance\includes.dm"
 #include "features\better_ui\includes.dm"
 #include "features\cheburek_car\includes.dm"
+#include "features\colossus\includes.dm"
 #include "features\del_required_experiments\includes.dm"
+#include "features\more_clothes\includes.dm"
+#include "features\gases\includes.dm"
 #include "features\hardsuits\includes.dm"
 #include "features\hierophant_club_resprite\includes.dm"
 #include "features\kvass_beverage\includes.dm"
