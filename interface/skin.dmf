@@ -99,7 +99,7 @@ window "mainwindow"
 		//MASSMETA EDIT BEGIN (better_ui)
 		//icon = 'icons\\ui\\common\\tg_32.png'
 
-		icon = 'massmeta\\features\\better_ui\\icons\\massmeta_64.png'
+		icon = 'modular_meta\\features\\better_ui\\icons\\massmeta_64.png'
 		//MASSMETA EDIT END
 		macro = "default"
 		menu = "menu"
