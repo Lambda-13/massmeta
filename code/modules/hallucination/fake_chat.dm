@@ -102,8 +102,7 @@
 
 		else
 			
-			chosen = pick(list(
-				"[pick_list_replacements(HALLUCINATION_FILE, "suspicion")]",
+			chosen = pick(list("[pick_list_replacements(HALLUCINATION_FILE, "suspicion")]",
 				"[pick_list_replacements(HALLUCINATION_FILE, "conversation")]",
 				"[pick_list_replacements(HALLUCINATION_FILE, "greetings")][first_name(hallucinator.name)]!",
 				"[pick_list_replacements(HALLUCINATION_FILE, "getout")]",

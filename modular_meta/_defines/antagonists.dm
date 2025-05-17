@@ -10,8 +10,8 @@
 #define BLOODSUCKER_EXIT_TORPOR "bloodsucker_exit_torpor"
 ///Вызывается когда вампир достигает финальной смерти.
 #define BLOODSUCKER_FINAL_DEATH "bloodsucker_final_death"
-	///Становится ли вампир пылью после финальной смерти
-	#define DONT_DUST (1<<0)
+///Становится ли вампир пылью после финальной смерти
+#define DONT_DUST (1<<0)
 ///Вызывается когда вампир ломает маскарад
 #define COMSIG_BLOODSUCKER_BROKE_MASQUERADE "comsig_bloodsucker_broke_masquerade"
 ///Вызывается когда вампир впадает в безумие
