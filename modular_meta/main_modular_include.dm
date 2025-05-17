@@ -29,7 +29,6 @@
 #include "features\quirk_augmented\includes.dm"
 #include "features\soviet_crate\includes.dm"
 #include "features\uplink_items\includes.dm"
-#include "features\venom_knife\includes.dm"
 #include "features\clown_traitor_sound\includes.dm"
 #include "features\woodgen\includes.dm"
 #include "features\not_enough_medical\includes.dm"

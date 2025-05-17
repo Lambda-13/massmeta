@@ -1,6 +1,6 @@
 /obj/item/knife/poison
 	name = "venom knife"
-	icon = 'modular_meta/features/venom_knife/icons/stabby.dmi'
+	icon = 'modular_meta/features/uplink_items/icons/stabby.dmi'
 	icon_state = "buckknife"
 	worn_icon_state = "buckknife"
 	force = 18
