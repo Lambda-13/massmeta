@@ -266,21 +266,33 @@
 		/obj/item/stack/sheet/iron = 5
 	)
 	needs_anchored = FALSE
-	var/other_type = FALSE // MASSMETA EDIT: Other type generator
+	var/other_type = FALSE //MASSMETA EDIT (woodgen)
 	var/high_production_profile = FALSE
 
 /obj/item/circuitboard/machine/pacman/examine(mob/user)
 	. = ..()
+	//MASSMETA EDIT BEGIN (woodgen)
+	// var/message = high_production_profile ? "high-power uranium mode" : "medium-power plasma mode"
+	// . += span_notice("It's set to [message].")
+	// . += span_notice("You can switch the mode by using a screwdriver on [src].")
+
 	if(!other_type)
 		var/message = high_production_profile ? "high-power uranium mode" : "medium-power plasma mode"
 		. += span_notice("It's set to [message].")
 		. += span_notice("You can switch the mode by using a screwdriver on [src].")
+	//MASSMETA EDIT END
 
 /obj/item/circuitboard/machine/pacman/screwdriver_act(mob/living/user, obj/item/tool)
+	//MASSMETA EDIT BEGIN (woodgen)
+	// high_production_profile = !high_production_profile
+	// var/message = high_production_profile ? "high-power uranium mode" : "medium-power plasma mode"
+	// to_chat(user, span_notice("You set the board for [message]"))
+
 	if(!other_type)
 		high_production_profile = !high_production_profile
 		var/message = high_production_profile ? "high-power uranium mode" : "medium-power plasma mode"
 		to_chat(user, span_notice("You set the board for [message]"))
+	//MASSMETA EDIT END
 
 /obj/item/circuitboard/machine/turbine_compressor
 	name = "Turbine - Inlet Compressor"
@@ -690,7 +702,7 @@
 		/obj/machinery/vending/wardrobe/science_wardrobe = "SciDrobe",
 		/obj/machinery/vending/wardrobe/sec_wardrobe = "SecDrobe",
 		/obj/machinery/vending/wardrobe/viro_wardrobe = "ViroDrobe",
-		/obj/machinery/vending/mod_modules = "NanoMOD", // MASSMETA EDIT: Добавляем вендор модулей для МОДсьютов
+		/obj/machinery/vending/mod_modules = "NanoMOD", // MASSMETA EDIT (mod_vend)
 	)
 
 /obj/item/circuitboard/machine/vendor/screwdriver_act(mob/living/user, obj/item/tool)
@@ -1151,6 +1163,28 @@
 		/datum/stock_part/matter_bin = 1,
 		/datum/stock_part/micro_laser = 1,
 		/obj/item/stack/cable_coil = 2,
+	)
+
+/obj/item/circuitboard/machine/experimental_cloner_scanner
+	name = "Experimental Cloning Scanner"
+	greyscale_colors = CIRCUIT_COLOR_MEDICAL
+	build_path = /obj/machinery/experimental_cloner_scanner
+	req_components = list(
+		/datum/stock_part/scanning_module = 1,
+		/datum/stock_part/matter_bin = 1,
+		/datum/stock_part/micro_laser = 1,
+		/obj/item/stack/sheet/glass = 1,
+		/obj/item/stack/cable_coil = 2
+	)
+
+/obj/item/circuitboard/machine/experimental_cloner
+	name = "Experimental Cloning Pod"
+	greyscale_colors = CIRCUIT_COLOR_MEDICAL
+	build_path = /obj/machinery/experimental_cloner
+	req_components = list(
+		/datum/stock_part/matter_bin = 1,
+		/obj/item/stack/cable_coil = 1,
+		/obj/item/stack/sheet/glass = 4
 	)
 
 /obj/item/circuitboard/machine/mechpad

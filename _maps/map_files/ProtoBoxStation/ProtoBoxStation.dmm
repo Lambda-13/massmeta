@@ -13298,7 +13298,7 @@
 "aOK" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/structure/table/wood,
-/obj/item/reagent_containers/cup/rag,
+/obj/item/rag,
 /obj/item/holosign_creator/robot_seat/bar{
 	pixel_y = 6
 	},

@@ -173,6 +173,10 @@ function ChoicedSelection(props: ChoicedSelectionProps) {
                           image,
                           'centered-image',
                         ])}
+                        style={{
+                          transform:
+                            'translateX(-50%) translateY(-50%) scale(0.8)',
+                        }}
                       />
                     </Button>
                   );
@@ -208,7 +212,7 @@ function GenderButton(props: GenderButtonProps) {
       placement="right"
       content={
         <Stack backgroundColor="white" p={0.3}>
-          {[Gender.Male, Gender.Female].map(
+          {[Gender.Male, Gender.Female, Gender.Other, Gender.Other2].map(
             (gender) => {
               return (
                 <Stack.Item key={gender}>

@@ -13,8 +13,6 @@
 
 //master files (unsorted, TODO: need modularization)
 
-#include "code\_globalvars\lists\names.dm"
-#include "code\__HELPERS\names.dm"
 #include "code\modules\mob\living\carbon\human\emote.dm"
 #include "code\datums\components\crafting\makeshift.dm"
 #include "code\game\objects\items\devices\radio\radio.dm"

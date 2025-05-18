@@ -32,7 +32,7 @@
 	description = "A scientist needs vermin to test on, use the cytology equipment to grow some of these simple critters!"
 	total_requirement = 3
 	max_requirement_per_type = 2
-	possible_types = list(/mob/living/basic/cockroach, /mob/living/basic/mouse)
+	possible_types = list(/mob/living/basic/cockroach, /mob/living/basic/mouse, /mob/living/basic/snail)
 
 /datum/experiment/scanning/random/cytology/medium
 	name = "Advanced Cytology Scanning Experiment"
@@ -519,14 +519,3 @@
 		/obj/machinery = 1
 	)
 	required_tier = 3
-
-// MASSMETA EDIT START: Add tier 4 experiment scanning
-/datum/experiment/scanning/points/machinery_tiered_scan/tier4_any
-	name = "Bluespace Stock Parts Benchmark"
-	description = "Our newly-designed machinery components require practical application tests for hints at possible further advancements, as well as a general confirmation that we didn't actually design worse parts somehow. Scan any machinery with Advanced Parts and report the results."
-	required_points = 6
-	required_atoms = list(
-		/obj/machinery = 1
-	)
-	required_tier = 4
-// MASSMETA EDIT END

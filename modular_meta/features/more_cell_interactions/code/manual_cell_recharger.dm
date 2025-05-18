@@ -22,7 +22,7 @@
 	else
 		. += "<hr><span class='notice'>There is no micro-servo inside.</span>"
 
-/obj/item/manual_cell_recharger/Initialize()
+/obj/item/manual_cell_recharger/Initialize(mapload)
 	. = ..()
 
 /obj/item/manual_cell_recharger/attack_self(mob/user)
