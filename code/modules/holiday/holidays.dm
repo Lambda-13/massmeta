@@ -437,8 +437,6 @@ GLOBAL_LIST_INIT(holiday_mail, list())
 	begin_month = JUNE
 	holiday_hat = /obj/item/clothing/head/costume/garland
 
-//MASSMETA EDIT REMOVAL BEGIN (lgbt_removal)
-/*
 /datum/holiday/pride_week
 	name = PRIDE_WEEK
 	begin_month = JUNE
@@ -467,8 +465,6 @@ GLOBAL_LIST_INIT(holiday_mail, list())
 		/obj/item/food/snowcones/rainbow,
 		/obj/item/toy/crayon/rainbow,
 	)
-*/
-//MASSMETA EDIT REMOVAL END
 
 // JULY
 

@@ -30,16 +30,17 @@
 	active_msg = span_notice("You ignite in a flash of hellfire!")
 	spell_requirements = NONE
 
-/datum/action/cooldown/spell/pointed/ignite/InterceptClickOn(mob/living/demon, params, atom/victim)
+/datum/action/cooldown/spell/pointed/ignite/InterceptClickOn(mob/living/clicker, params, atom/target)
 	. = ..()
 	if(!.)
 		return FALSE
 
-	if(!isliving(victim))
+	if(!isliving(target))
 		return FALSE
-	var/mob/living/target = victim
-	target.adjust_fire_stacks(WRATHFUL_FIRE_AMOUNT)
-	target.ignite_mob()
+	
+	var/mob/living/T = target
+	T.adjust_fire_stacks(WRATHFUL_FIRE_AMOUNT)
+	T.ignite_mob()
 
 	return TRUE
 

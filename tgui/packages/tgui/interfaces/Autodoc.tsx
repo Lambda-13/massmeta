@@ -1,9 +1,4 @@
-import {
-  Box,
-  Button,
-  NoticeBox,
-  Section,
-} from 'tgui-core/components';
+import { Box, Button, NoticeBox, Section } from 'tgui-core/components';
 
 import { useBackend } from '../backend';
 import { Window } from '../layouts';
@@ -32,7 +27,7 @@ interface AutodocProps {
 }
 
 export const Autodoc: React.FC<AutodocProps> = ({ context }) => {
-  const { act, data } = useBackend<AutodocData>(context);
+  const { act, data } = useBackend<AutodocData>();
   const operations = data.surgeries;
 
   if (data.mode === 1) {
@@ -84,10 +79,7 @@ export const Autodoc: React.FC<AutodocProps> = ({ context }) => {
       <Window>
         <Section textAlign="center" title={`Операция: ${data.s_name}`}>
           {data.steps.map((step) => (
-            <Box
-              key={step.name}
-              fontSize={step.current ? '16px' : '12px'}
-            >
+            <Box key={step.name} fontSize={step.current ? '16px' : '12px'}>
               {step.current ? '>> ' : ''}
               {step.name}
               {step.current ? ' <<' : ''}

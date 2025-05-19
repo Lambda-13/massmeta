@@ -10,7 +10,7 @@
 /obj/item/stock_parts/capacitor/noneuclid
 	name = "noneuclid capacitor"
 	desc = "A capacity capacitor used in the construction of a variety of devices."
-	icon = 'modular_meta/features/tier5/icons/stock_parts.dmi'
+	icon = 'modular_meta/features/parts_tier_5/icons/stock_parts.dmi'
 	icon_state = "capacitor"
 	rating = 5
 	energy_rating = 20
@@ -19,7 +19,7 @@
 /obj/item/stock_parts/scanning_module/noneuclid
 	name = "noneuclid scanning module"
 	desc = "A compact, ultra resolution triphasic scanning module used in the construction of certain devices."
-	icon = 'modular_meta/features/tier5/icons/stock_parts.dmi'
+	icon = 'modular_meta/features/parts_tier_5/icons/stock_parts.dmi'
 	icon_state = "scan_module"
 	rating = 5
 	energy_rating = 20
@@ -28,7 +28,7 @@
 /obj/item/stock_parts/servo/noneuclid
 	name = "noneuclid-servo"
 	desc = "A tiny little servo motor used in the construction of certain devices."
-	icon = 'modular_meta/features/tier5/icons/stock_parts.dmi'
+	icon = 'modular_meta/features/parts_tier_5/icons/stock_parts.dmi'
 	icon_state = "servo"
 	rating = 5
 	energy_rating = 20
@@ -37,7 +37,7 @@
 /obj/item/stock_parts/micro_laser/noneuclid
 	name = "noneuclid micro-laser"
 	desc = "A tiny laser used in certain devices."
-	icon = 'modular_meta/features/tier5/icons/stock_parts.dmi'
+	icon = 'modular_meta/features/parts_tier_5/icons/stock_parts.dmi'
 	icon_state = "micro_laser"
 	rating = 5
 	energy_rating = 20
@@ -46,7 +46,7 @@
 /obj/item/stock_parts/matter_bin/noneuclid
 	name = "noneuclid matter bin"
 	desc = "A container designed to hold compressed matter awaiting reconstruction."
-	icon = 'modular_meta/features/tier5/icons/stock_parts.dmi'
+	icon = 'modular_meta/features/parts_tier_5/icons/stock_parts.dmi'
 	icon_state = "matter_bin"
 	rating = 5
 	energy_rating = 20

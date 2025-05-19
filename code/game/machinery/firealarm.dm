@@ -142,10 +142,10 @@
 /obj/machinery/firealarm/proc/set_status()
 	if(!(my_area.fire || LAZYLEN(my_area.active_firelocks)) || (obj_flags & EMAGGED))
 		soundloop.stop()
-	// MASSMETA EDIT ADDITION START
+	// MASSMETA EDIT BEGIN (no_firelock_sound)
 	else
 		soundloop.start()
-	// MASSMETA EDIT ADDITION END
+	// MASSMETA EDIT END
 	update_appearance()
 
 /obj/machinery/firealarm/update_appearance(updates)
@@ -249,7 +249,7 @@
 		return
 
 	if(my_area.fire)
-		soundloop.start() // MASSMETA EDIT ADDITION
+		soundloop.start() // MASSMETA EDIT (no_firelock_sound)
 		return //area alarm already active
 	my_area.alarm_manager.send_alarm(ALARM_FIRE, my_area)
 	// This'll setup our visual effects, so we only need to worry about the alarm

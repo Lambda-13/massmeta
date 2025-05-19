@@ -208,7 +208,7 @@ function GenderButton(props: GenderButtonProps) {
       placement="right"
       content={
         <Stack backgroundColor="white" p={0.3}>
-          {[Gender.Male, Gender.Female].map(
+          {[Gender.Male, Gender.Female, Gender.Other, Gender.Other2].map(
             (gender) => {
               return (
                 <Stack.Item key={gender}>

@@ -124,7 +124,7 @@
 	/// Our slightly quieter looping burn sound effect; copied over from 'bonfire.dm'
 	var/datum/looping_sound/burning/brazier/burning_loop
 
-/obj/structure/bloodsucker/lighting/brazier/Initialize()
+/obj/structure/bloodsucker/lighting/brazier/Initialize(mapload)
 	. = ..()
 	burning_loop = new(src)
 

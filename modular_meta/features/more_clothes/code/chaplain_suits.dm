@@ -13,10 +13,10 @@
 	worn_icon = 'modular_meta/features/more_clothes/icons/on_mob/suits/chaplain.dmi'
 	icon_state = "penitent_armor"
 
-
+// Give box for chap beacon
 /obj/item/storage/box/holy/penitent
-    name = "Last Penitent Kit"
-    typepath_for_preview = /obj/item/clothing/suit/chaplainsuit/armor/penitent_armor
+	name = "Last Penitent Kit"
+	typepath_for_preview = /obj/item/clothing/suit/chaplainsuit/armor/penitent_armor
 
 /obj/item/storage/box/holy/penitent/PopulateContents()
 	.=..()

@@ -67,9 +67,9 @@
 		"bluespace_pod",
 		"quantum_keycard",
 		"swapper",
-		"cargotele", // MASSMETA EDIT: Add cargo teleport
-		"telesci_console", // MASSMETA EDIT: Add telescience
-		"telepad", // MASSMETA EDIT: Add telescience
+		"cargotele", // MASSMETA EDIT (cargo_teleporter)
+		"telesci_console", // MASSMETA EDIT (telescience)
+		"telepad", // MASSMETA EDIT (telescience)
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_3_POINTS)
 	announce_channels = list(RADIO_CHANNEL_SCIENCE)

@@ -85,7 +85,7 @@
 	return ..()
 
 /datum/status_effect/frenzy/on_remove()
-	owner.balloon_alert(owner, "You come back to your senses.")
+	owner.balloon_alert(owner, "you come back to your senses.")
 	owner.remove_traits(list(TRAIT_MUTE, TRAIT_DEAF), FRENZY_TRAIT)
 	if(was_tooluser)
 		ADD_TRAIT(owner, TRAIT_ADVANCEDTOOLUSER, SPECIES_TRAIT)

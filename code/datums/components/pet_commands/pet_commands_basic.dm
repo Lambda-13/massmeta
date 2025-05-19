@@ -135,8 +135,8 @@
 	command_desc = "Command your pet to attack things that you point out to it."
 	radial_icon_state = "attack"
 	requires_pointing = TRUE
-	speech_commands = list("attack", "sic", "kill")
 	callout_type = /datum/callout_option/attack
+	speech_commands = list("attack", "sic", "kill")
 	command_feedback = "growl"
 	pointed_reaction = "and growls"
 	/// Balloon alert to display if providing an invalid target

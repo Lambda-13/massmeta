@@ -3,10 +3,11 @@
 	greyscale_colors = CIRCUIT_COLOR_GENERIC
 	build_path = /obj/machinery/telepad
 	req_components = list(
-							/obj/item/stack/ore/bluespace_crystal = 2,
-							/datum/stock_part/capacitor = 1,
-							/obj/item/stack/cable_coil = 1,
-							/obj/item/stack/sheet/glass = 1)
+		/obj/item/stack/ore/bluespace_crystal = 2,
+		/datum/stock_part/capacitor = 1,
+		/obj/item/stack/cable_coil = 1,
+		/obj/item/stack/sheet/glass = 1,
+	)
 	def_components = list(/obj/item/stack/ore/bluespace_crystal = /obj/item/stack/ore/bluespace_crystal/artificial)
 
 ///SCI TELEPAD///
@@ -25,8 +26,8 @@
 /obj/machinery/telepad/RefreshParts()
 	. = ..()
 	var/E
-	for(var/obj/item/stock_parts/capacitor/C in component_parts)
-		E += C.rating
+	for(var/datum/stock_part/capacitor/capacitor in component_parts)
+		E += capacitor.tier
 	efficiency = E
 
 /obj/machinery/telepad/attackby(obj/item/I, mob/user, params)
