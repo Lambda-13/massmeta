@@ -73,10 +73,10 @@
 		var/obj/item/trash/can/crushed_can = new /obj/item/trash/can(M.loc)
 		crushed_can.icon_state = icon_state
 
-		//MASSMETA EDIT ADDITION BEGIN (kvass)
+		//MASSMETA EDIT BEGIN (kvass_beverage)
 		if(icon_state == "kvass")
 			crushed_can.icon = 'modular_meta/features/kvass_beverage/icons/janitor.dmi'
-		//MASSMETA EDIT ADDITION END
+		//MASSMETA EDIT END
 
 		qdel(src)
 		return TRUE
@@ -90,10 +90,10 @@
 		return
 	var/obj/item/trash/can/crushed_can = new /obj/item/trash/can(loc)
 	crushed_can.icon_state = icon_state
-	//MASSMETA EDIT ADDITION BEGIN (kvass)
+	//MASSMETA EDIT BEGIN (kvass_beverage)
 	if(icon_state == "kvass")
 		crushed_can.icon = 'modular_meta/features/kvass_beverage/icons/janitor.dmi'
-	//MASSMETA EDIT ADDITION END
+	//MASSMETA EDIT END
 	if(!proj.damage || proj.damage_type != BRUTE)
 		return
 
@@ -154,10 +154,10 @@
 	var/obj/item/trash/can/crushed_can = new /obj/item/trash/can(loc)
 	crushed_can.icon_state = icon_state
 
-	//MASSMETA EDIT ADDITION BEGIN (kvass)
+	//MASSMETA EDIT BEGIN (kvass_beverage)
 	if(icon_state == "kvass")
 		crushed_can.icon = 'modular_meta/features/kvass_beverage/icons/janitor.dmi'
-	//MASSMETA EDIT ADDITION END
+	//MASSMETA EDIT END
 
 	moveToNullspace()
 	QDEL_IN(src, 1 SECONDS) // give it a second so it can still be logged for the throw impact

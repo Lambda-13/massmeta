@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 #ANSI Escape Codes for colors to increase contrast of errors
 RED="\033[0;31m"
@@ -14,7 +15,7 @@ sed 's/code\/\*\*\/\*\*.dm/modular_meta\/features\/\*\*\/\*\*.dm/g' <tools/ci/ch
 echo -e "${BLUE}Re-running grep checks, but looking in modular_meta/master_files/...${NC}"
 
 # Run the linters again, but modular massmeta code (perevody = translations).
-sed 's/code\/\*\*\/\*\*.dm/modular_meta\/perevody\/\*\*\/\*\*.dm/g' <tools/ci/check_grep.sh | bash
+sed 's/code\/\*\*\/\*\*.dm/modular_meta\/ru_translate\/\*\*\/\*\*.dm/g' <tools/ci/check_grep.sh | bash
 
 # Run the linters again, but modular massmeta code (reverts).
 sed 's/code\/\*\*\/\*\*.dm/modular_meta\/reverts\/\*\*\/\*\*.dm/g' <tools/ci/check_grep.sh | bash

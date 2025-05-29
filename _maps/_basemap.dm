@@ -15,15 +15,15 @@
 		#include "map_files\NebulaStation\NebulaStation.dmm"
 		#include "map_files\wawastation\wawastation.dmm"
 
-		//MASSMETA EDIT ADDITON BEGIN - Compiling our modular maps too!
+		// MASSMETA EDIT BEGIN - Compiling our modular maps too!
 		#include "map_files\PubbyStation\PubbyStation.dmm"
 		#include "map_files\KiloStation\KiloStation.dmm"
 		#include "map_files\ProtoBoxStation\ProtoBoxStation.dmm"
 		#include "map_files\Rainstation\rainstation.dmm"
 		#include "map_files\protosstation\protos.dmm"
-		#include "_maps\map_files\bearcat\bearcat.dmm"
+		#include "map_files\bearcat\bearcat.dmm"
 		#include "map_files\Mining\Ocean.dmm"
-		//MASSMETA EDIT ADDITON END
+		// MASSMETA EDIT END
 
 		#ifdef CIBUILDING
 			#include "templates.dm"

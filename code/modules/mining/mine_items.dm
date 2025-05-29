@@ -143,10 +143,6 @@
 	roundstart_template = /datum/map_template/shuttle/mining/nebula
 	height = 10
 
-/obj/docking_port/stationary/mining_home/protos
-	roundstart_template = /datum/map_template/shuttle/mining/protos
-	height = 4
-
 /obj/docking_port/stationary/mining_home/common
 	name = "SS13: Common Mining Dock"
 	shuttle_id = "commonmining_home"
@@ -157,9 +153,6 @@
 
 /obj/docking_port/stationary/mining_home/common/northstar
 	roundstart_template = /datum/map_template/shuttle/mining_common/northstar
-
-/obj/docking_port/stationary/mining_home/common/protos
-	roundstart_template = /datum/map_template/shuttle/mining_common/protos
 
 /obj/structure/closet/crate/miningcar
 	name = "mine cart"

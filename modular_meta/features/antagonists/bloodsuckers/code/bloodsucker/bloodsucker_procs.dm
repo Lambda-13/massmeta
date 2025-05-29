@@ -1,11 +1,11 @@
-//datum/antagonist/bloodsucker/proc/on_examine(datum/source, mob/examiner, examine_text)
-//	SIGNAL_HANDLER
+/datum/antagonist/bloodsucker/proc/on_examine(datum/source, mob/examiner, examine_text)
+	SIGNAL_HANDLER
 
-//	if(!iscarbon(source))
-//		return
-//	var/vamp_examine = return_vamp_examine(examiner)
-//	if(vamp_examine)
-//		examine_text += vamp_examine
+	if(!iscarbon(source))
+		return
+	var/vamp_examine = return_vamp_examine(examiner)
+	if(vamp_examine)
+		examine_text += vamp_examine
 
 ///Called when a Bloodsucker buys a power: (power)
 /datum/antagonist/bloodsucker/proc/BuyPower(datum/action/cooldown/bloodsucker/power)
@@ -84,6 +84,8 @@
 	for(var/datum/action/cooldown/bloodsucker/power as anything in powers)
 		if(power.purchase_flags & TREMERE_CAN_BUY)
 			continue
+		if(!power.should_level)
+			continue
 		power.upgrade_power()
 
 ///Disables all powers, accounting for torpor
@@ -127,6 +129,10 @@
 		var/returnIcon = "[icon2html('modular_meta/features/antagonists/icons/bloodsuckers/vampiric.dmi', world, "bloodsucker")]"
 		returnString += "\n"
 		return returnIcon + returnString
+	// Viewer not a Vamp AND not the target's vassal?
+	if(!viewer.mind.has_antag_datum((/datum/antagonist/bloodsucker)) && !(viewer in vassals))
+		if(!(HAS_TRAIT(viewer.mind, TRAIT_BLOODSUCKER_HUNTER) && broke_masquerade))
+			return FALSE
 	// Default String
 	var/returnString = "\[<span class='warning'><EM>[return_full_name()]</EM></span>\]"
 	var/returnIcon = "[icon2html('modular_meta/features/antagonists/icons/bloodsuckers/vampiric.dmi', world, "bloodsucker")]"

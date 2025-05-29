@@ -1,3 +1,6 @@
+/// You have special interactions with Bloodsuckers (для священника)
+#define TRAIT_BLOODSUCKER_HUNTER "bloodsucker_hunter"
+
 ///Вызывается когда вампир повышает ранг: (datum/bloodsucker_datum, mob/owner, mob/target)
 #define BLOODSUCKER_RANK_UP "bloodsucker_rank_up"
 ///Вызывается когда вампир взаимодействует с подданым на стойке подношения.
@@ -10,8 +13,8 @@
 #define BLOODSUCKER_EXIT_TORPOR "bloodsucker_exit_torpor"
 ///Вызывается когда вампир достигает финальной смерти.
 #define BLOODSUCKER_FINAL_DEATH "bloodsucker_final_death"
-	///Становится ли вампир пылью после финальной смерти
-	#define DONT_DUST (1<<0)
+///Становится ли вампир пылью после финальной смерти
+#define DONT_DUST (1<<0)
 ///Вызывается когда вампир ломает маскарад
 #define COMSIG_BLOODSUCKER_BROKE_MASQUERADE "comsig_bloodsucker_broke_masquerade"
 ///Вызывается когда вампир впадает в безумие

@@ -79,7 +79,7 @@
 	cargo_radio = new /obj/item/radio(src)
 
 	// Prevent radio listening
-	cargo_radio.listening = 0
+	cargo_radio.set_listening(FALSE)
 
 	// Set radio frequency
 	cargo_radio.set_frequency(FREQ_SUPPLY)
@@ -99,10 +99,6 @@
 /obj/machinery/cryptominer/Destroy()
 	STOP_PROCESSING(SSmachines,src)
 	QDEL_NULL(cargo_radio)
-	return ..()
-
-/obj/machinery/cryptominer/deconstruct()
-	STOP_PROCESSING(SSmachines,src)
 	return ..()
 
 /obj/machinery/cryptominer/attackby(obj/item/W, mob/living/user, params)
@@ -137,7 +133,7 @@
 		user.visible_message(span_notice("[user] begins setting \the [src] to use \the [CARD]."), span_notice("[user] begins setting \the [src] to use \the [CARD]."))
 
 		// Display alert balloon
-		balloon_alert(user, "Configuring new account...")
+		balloon_alert(user, "configuring new account...")
 
 		// Perform interaction timer
 		if(!do_after(user, 5 SECONDS, src))
@@ -145,7 +141,7 @@
 			user.visible_message(span_warning("[user] fails to link \the [src] to a new account!"), span_warning("You fail to link \the [src] to a new account!"))
 
 			// Display alert balloon
-			balloon_alert(user, "Configuration failed!")
+			balloon_alert(user, "configuration failed!")
 
 			// Return with no further effects
 			return
@@ -176,7 +172,7 @@
 	user.visible_message(span_warning("[user] begins resetting \the [src]."), span_warning("You begin resetting \the [src]."))
 
 	// Display alert balloon
-	balloon_alert(user, "Resetting account...")
+	balloon_alert(user, "resetting account...")
 
 	// Perform interaction timer
 	if(!do_after(user, 5 SECONDS, src))
@@ -184,7 +180,7 @@
 		user.visible_message(span_warning("[user] fails to reset \the [src]."), span_warning("You fail to reset \the [src]."))
 
 		// Display alert balloon
-		balloon_alert(user, "Reset failed!")
+		balloon_alert(user, "reset failed!")
 
 		// Return with no further effects
 		return

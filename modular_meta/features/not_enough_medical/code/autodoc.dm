@@ -88,8 +88,8 @@ GLOBAL_LIST_INIT(autodoc_supported_surgery_steps, typecacheof(list(
 	. = ..()
 	var/list/P = list()
 	var/avg = 1
-	for(var/obj/item/stock_parts/servo/M in component_parts)
-		P += M.get_part_rating()
+	for(var/datum/stock_part/servo/new_servo in component_parts)
+		P += new_servo.tier
 	avg = round(list_avg(P), 1)
 	switch(avg)
 		if(2)
@@ -103,8 +103,8 @@ GLOBAL_LIST_INIT(autodoc_supported_surgery_steps, typecacheof(list(
 
 	//Энергопотребление (10к -> 7.5к -> 5к -> 2.5к -> 1к)
 	var/Pwr = -1
-	for(var/obj/item/stock_parts/capacitor/cap in component_parts)
-		Pwr += cap.rating
+	for(var/datum/stock_part/capacitor/capacitor in component_parts)
+		Pwr += capacitor.tier
 	active_power_usage = initial(active_power_usage) - (initial(active_power_usage)*(Pwr))/4
 	if(active_power_usage <= 1000)
 		active_power_usage = 1000
@@ -350,7 +350,7 @@ GLOBAL_LIST_INIT(autodoc_supported_surgery_steps, typecacheof(list(
 		return
 	open_machine()
 
-/obj/machinery/autodoc/open_machine()
+/obj/machinery/autodoc/open_machine(drop = TRUE, density_to_set = FALSE)
 	if(state_open)
 		return FALSE
 	..(FALSE)

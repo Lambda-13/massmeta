@@ -328,7 +328,7 @@
 /obj/machinery/door/firedoor/proc/start_activation_process(code = FIRELOCK_ALARM_TYPE_GENERIC)
 	if(active)
 		return //We're already active
-	// soundloop.start() //MASSMETA EDIT REMOVAL
+	// soundloop.start() //MASSMETA EDIT (no_firelock_sound)
 	is_playing_alarm = TRUE
 	my_area.fault_status = AREA_FAULT_AUTOMATIC
 	my_area.fault_location = name
@@ -342,7 +342,7 @@
  * in the merge group datum. sets our alarm type to null, signifying no alarm.
  */
 /obj/machinery/door/firedoor/proc/start_deactivation_process()
-	// soundloop.stop() //MASSMETA EDIT REMOVAL
+	// soundloop.stop() //MASSMETA EDIT (no_firelock_sound)
 	is_playing_alarm = FALSE
 	my_area.fault_status = AREA_FAULT_NONE
 	my_area.fault_location = null
@@ -397,7 +397,7 @@
 	alarm_type = null
 	active = FALSE
 	remove_as_source()
-	// soundloop.stop() //MASSMETA EDIT REMOVAL
+	// soundloop.stop() //MASSMETA EDIT (no_firelock_sound)
 	is_playing_alarm = FALSE
 	update_appearance(UPDATE_ICON) //Sets the door lights even if the door doesn't move.
 	correct_state()
@@ -414,7 +414,7 @@
 	if(!length(issue_turfs)) // Generic alarms get out
 		alarm_type = null
 
-	// soundloop.stop() //MASSMETA EDIT REMOVAL
+	// soundloop.stop() //MASSMETA EDIT (no_firelock_sound)
 	is_playing_alarm = FALSE
 	remove_as_source()
 	update_appearance(UPDATE_ICON) //Sets the door lights even if the door doesn't move.
@@ -473,19 +473,19 @@
 /obj/machinery/door/firedoor/proc/on_power_loss()
 	SIGNAL_HANDLER
 
-	// soundloop.stop() //MASSMETA EDIT REMOVAL
+	// soundloop.stop() //MASSMETA EDIT (no_firelock_sound)
 
 /obj/machinery/door/firedoor/proc/on_power_restore()
 	SIGNAL_HANDLER
 
 	correct_state()
 
-	// MASSMETA EDIT REMOVAL BEGIN
+	// MASSMETA EDIT BEGIN (no_firelock_sound)
 	/*
 	if(is_playing_alarm)
 		soundloop.start()
 	*/
-	// MASSMETA EDIT REMOVAL END
+	// MASSMETA EDIT END
 
 
 /obj/machinery/door/firedoor/attack_hand(mob/living/user, list/modifiers)

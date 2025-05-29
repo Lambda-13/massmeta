@@ -34,7 +34,7 @@
 	///Boolean on whether the book is currently being used, so you can only use it on one person at a time.
 	var/in_use = FALSE
 
-/obj/item/book/kindred/Initialize()
+/obj/item/book/kindred/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/stationloving, FALSE, TRUE)
 
@@ -47,9 +47,10 @@
 	. = ..()
 	if(!user.can_read(src) || in_use || (target == user) || !ismob(target))
 		return
-	if(IS_BLOODSUCKER(user))
-		to_chat(user, span_notice("[src] seems to be too complicated for you. It would be best to leave this for someone else to take."))
-		return
+	if(!HAS_TRAIT(user.mind, TRAIT_BLOODSUCKER_HUNTER))
+		if(IS_BLOODSUCKER(user))
+			to_chat(user, span_notice("[src] seems to be too complicated for you. It would be best to leave this for someone else to take."))
+			return
 		to_chat(user, span_warning("[src] burns your hands as you try to use it!"))
 		user.apply_damage(3, BURN, pick(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))
 		return
@@ -73,12 +74,13 @@
 		to_chat(user, span_notice("You fail to draw any conclusions to [target] being a Bloodsucker."))
 
 /obj/item/book/kindred/attack_self(mob/living/user)
-	if(IS_BLOODSUCKER(user))
-		to_chat(user, span_notice("[src] seems to be too complicated for you. It would be best to leave this for someone else to take."))
-	else
-		to_chat(user, span_warning("You feel your eyes unable to read the boring texts..."))
-		user.set_eye_blur_if_lower(10 SECONDS)
-	return
+	if(user.mind && !HAS_TRAIT(user.mind, TRAIT_BLOODSUCKER_HUNTER))
+		if(IS_BLOODSUCKER(user))
+			to_chat(user, span_notice("[src] seems to be too complicated for you. It would be best to leave this for someone else to take."))
+		else
+			to_chat(user, span_warning("You feel your eyes unable to read the boring texts..."))
+			user.set_eye_blur_if_lower(10 SECONDS)
+		return
 	ui_interact(user)
 
 /obj/item/book/kindred/ui_interact(mob/living/user, datum/tgui/ui)

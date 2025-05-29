@@ -1,13 +1,3 @@
-## Module ID: ADDITIONAL_CIRCUITS
+Было взято с: https://github.com/NovaSector/NovaSector/tree/master/modular_nova/modules/additional_circuit
 
-### Defines:
-
-- _defines\additional_circuit.dm
-
-### TG Proc/File Changes:
-
-- N/A
-
-### TGUI Files:
-
-- N/A
+При возникновении ошибок смотреть в репозитоий выше.

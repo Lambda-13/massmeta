@@ -4,8 +4,13 @@
 /// The default cell drain of a modsuit. The standard modsuit active power usage drains this much energy per modsuit second.
 #define DEFAULT_CHARGE_DRAIN (0.005 * STANDARD_CELL_CHARGE) // A standard cell lasts 200 seconds with this on active power usage, while a high power one lasts 2,000 seconds.
 
-/// Default time for a part to seal
-#define MOD_ACTIVATION_STEP_TIME (0.5 SECONDS) //MASSMETA EDIT CHANGE - ORIGINAL: #define MOD_ACTIVATION_STEP_TIME (2 SECONDS)
+/// Default time for a part of the suit to seal.
+//MASSMETA EDIT BEGIN ()
+//#define MOD_ACTIVATION_STEP_TIME (2 SECONDS)
+
+// Reduce time for modsuit deployment
+#define MOD_ACTIVATION_STEP_TIME (0.5 SECONDS)
+//MASSMETA EDIT END
 
 /// Passive module, just acts when put in naturally.
 #define MODULE_PASSIVE 0

@@ -8,16 +8,15 @@
 	. = ..()
 	. += span_danger("\The [src] has a [nt ? "Nanotrasen" : "Syndicate"] marking on the blade.")
 
-/obj/item/switchblade/backstab/Initialize()
+/obj/item/switchblade/backstab/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/backstabs, 1.75) // 35 damage
 
 
 /datum/component/backstabs
-	var/backstab_multiplier = 4 // 4x damage by default
+	var/backstab_multiplier
 
-/datum/component/backstabs/Initialize(mult)
-	backstab_multiplier = mult
+/datum/component/backstabs/Initialize(backstab_multiplier = 4) // 4x damage by default
 	if(!isitem(parent))
 		return COMPONENT_INCOMPATIBLE
 	RegisterSignal(parent, COMSIG_ITEM_ATTACK, .proc/on_attack)

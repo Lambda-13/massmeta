@@ -209,9 +209,6 @@ GLOBAL_DATUM(syndicate_code_response_regex, /regex)
 	/N
 	*/
 
-//MASSMETA EDIT REMOVAL BEGIN - CODE_WORDS - (Moved to massmeta/code/__HELPERS/names.dm)
-/*
-
 /proc/generate_code_phrase(return_list=FALSE)//Proc is used for phrase and response in master_controller.dm
 
 	if(!return_list)
@@ -235,9 +232,11 @@ GLOBAL_DATUM(syndicate_code_response_regex, /regex)
 	var/drinks = strings(ION_FILE, "iondrinks")
 	var/locations = strings(LOCATIONS_FILE, "locations")
 
-	var/list/names = list()
-	for(var/datum/record/crew/target in GLOB.manifest.general)//Picks from crew manifest.
-		names += target.name
+	//MASSMETA EDIT BEGIN (ru_traitor_words)
+	// var/list/names = list()
+	// for(var/datum/record/crew/target in GLOB.manifest.general)//Picks from crew manifest.
+		// names += target.name
+	//MASSMETA EDIT END
 
 	var/maxwords = words//Extra var to check for duplicates.
 
@@ -250,20 +249,30 @@ GLOBAL_DATUM(syndicate_code_response_regex, /regex)
 
 		switch(pick(safety))//Chance based on the safety list.
 			if(1)//1 and 2 can only be selected once each to prevent more than two specific names/places/etc.
-				switch(rand(1,2))//Mainly to add more options later.
-					if(1)
-						if(length(names) && prob(70))
-							. += pick(names)
-						else
-							. += generate_random_name()
+				//MASSMETA EDIT BEGIN (ru_traitor_words)
+				// switch(rand(1,2))//Mainly to add more options later.
+					// if(1)
+						// if(length(names) && prob(70))
+							// . += pick(names)
+						// else
+							// . += generate_random_name()
 
-					if(2)
-						var/datum/job/job = pick(SSjob.joinable_occupations)
-						if(job)
-							. += job.title //Returns a job.
-						else
-							stack_trace("Failed to pick(SSjob.joinable_occupations) on generate_code_phrase()")
-							. += "Bug"
+					// if(2)
+						// var/datum/job/job = pick(SSjob.joinable_occupations)
+						// if(job)
+							// . += job.title //Returns a job.
+						// else
+							// stack_trace("Failed to pick(SSjob.joinable_occupations) on generate_code_phrase()")
+							// . += "Bug"
+
+				var/datum/job/job = pick(SSjob.joinable_occupations)
+				if(job)
+					var/list/job_ru_list = strings("massmeta/jobs.json", "jobs_ru")
+					. += pick(job_ru_list[job.title]) // return same but on russian
+				else
+					stack_trace("Failed to pick(SSjob.joinable_occupations) on generate_code_phrase()")
+					. += "Кодер"
+				//MASSMETA EDIT END
 				safety -= 1
 			if(2)
 				switch(rand(1,3))//Food, drinks, or places. Only selectable once.
@@ -289,9 +298,6 @@ GLOBAL_DATUM(syndicate_code_response_regex, /regex)
 				. += "."
 			else
 				. += ", "
-
-*/
-//MASSMETA EDIT REMOVAL END
 
 /proc/odd_organ_name()
 	return "[pick(GLOB.gross_adjectives)], [pick(GLOB.gross_adjectives)] organ"

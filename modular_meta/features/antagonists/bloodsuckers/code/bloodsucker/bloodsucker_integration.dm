@@ -39,6 +39,15 @@
 		return 0
 	return ..()
 
+// Used when analyzing a Bloodsucker, Masquerade will hide brain traumas
+/mob/living/carbon/get_traumas()
+	if(!mind)
+		return ..()
+	var/datum/antagonist/bloodsucker/bloodsuckerdatum = IS_BLOODSUCKER(src)
+	if(bloodsuckerdatum && HAS_TRAIT(src, TRAIT_MASQUERADE))
+		return
+	return ..()
+
 // Used to keep track of how much Blood we've drank so far
 /mob/living/get_status_tab_items()
 	. = ..()

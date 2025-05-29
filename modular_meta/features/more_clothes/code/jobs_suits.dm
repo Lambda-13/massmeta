@@ -165,15 +165,15 @@
 
 	unique_reskin = list(
 		"Old fashioned" = list(
-			RESKIN_ICON = 'modular_meta/features/more_clothes/icons/items/under/captain.dmi',
+			RESKIN_ICON = 'modular_meta/features/more_clothes/icons/items/under/rd.dmi',
 			RESKIN_ICON_STATE = "rdturtle",
-			RESKIN_WORN_ICON = 'modular_meta/features/more_clothes/icons/on_mob/under/captain.dmi',
+			RESKIN_WORN_ICON = 'modular_meta/features/more_clothes/icons/on_mob/under/rd.dmi',
 			RESKIN_WORN_ICON_STATE = "rdturtle",
 		),
 		"Original" = list(
-			RESKIN_ICON = 'icons/obj/clothing/under/captain.dmi',
+			RESKIN_ICON = 'icons/obj/clothing/under/rnd.dmi',
 			RESKIN_ICON_STATE = "rdturtle",
-			RESKIN_WORN_ICON = 'icons/mob/clothing/under/captain.dmi',
+			RESKIN_WORN_ICON = 'icons/mob/clothing/under/rnd.dmi',
 			RESKIN_WORN_ICON_STATE = "rdturtle",
 		),
 	)
@@ -181,15 +181,15 @@
 /obj/item/clothing/under/rank/rnd/research_director/turtleneck/skirt
 	unique_reskin = list(
 		"Old fashioned" = list(
-			RESKIN_ICON = 'modular_meta/features/more_clothes/icons/items/under/captain.dmi',
+			RESKIN_ICON = 'modular_meta/features/more_clothes/icons/items/under/rd.dmi',
 			RESKIN_ICON_STATE = "rdturtle_skirt",
-			RESKIN_WORN_ICON = 'modular_meta/features/more_clothes/icons/on_mob/under/captain.dmi',
+			RESKIN_WORN_ICON = 'modular_meta/features/more_clothes/icons/on_mob/under/rd.dmi',
 			RESKIN_WORN_ICON_STATE = "rdturtle_skirt",
 		),
 		"Original" = list(
-			RESKIN_ICON = 'icons/obj/clothing/under/captain.dmi',
+			RESKIN_ICON = 'icons/obj/clothing/under/rnd.dmi',
 			RESKIN_ICON_STATE = "rdturtle_skirt",
-			RESKIN_WORN_ICON = 'icons/mob/clothing/under/captain.dmi',
+			RESKIN_WORN_ICON = 'icons/mob/clothing/under/rnd.dmi',
 			RESKIN_WORN_ICON_STATE = "rdturtle_skirt",
 		),
 	)

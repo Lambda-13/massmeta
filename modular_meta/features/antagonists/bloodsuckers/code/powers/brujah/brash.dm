@@ -42,14 +42,14 @@
 
 /// Hit an atom, set bloodcost, set cooldown time, play a sound, and deconstruct the atom
 /// with this one convenient proc!
-/datum/action/cooldown/bloodsucker/targeted/brawn/brash/proc/HitWithStyle(atom/target_atom, sound, vol as num, var/cost as num, var/cooldown)
+/datum/action/cooldown/bloodsucker/targeted/brawn/brash/proc/HitWithStyle(atom/target_atom, sound, vol as num, cost as num, cooldown)
 	if(!isobj(target_atom))
 		return
 	var/obj/target_obj = target_atom
 	owner.do_attack_animation(target_obj)
 	bloodcost = cost
 	cooldown_time = cooldown
-	playsound(target_atom, sound, 75, TRUE)
+	playsound(target_atom, sound, vol, TRUE)
 	target_obj.deconstruct(FALSE)
 
 /datum/action/cooldown/bloodsucker/targeted/brawn/brash/FireTargetedPower(atom/target_atom)

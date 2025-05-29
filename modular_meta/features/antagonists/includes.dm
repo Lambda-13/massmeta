@@ -1,5 +1,6 @@
 #include "world.dm"
 #include "bloodsuckers\rulesets.dm"
+#include "bloodsuckers\code\job_edits.dm"
 #include "bloodsuckers\code\assets\bloodsucker_assets.dm"
 #include "bloodsuckers\code\bloodsucker\bloodsucker_conversion.dm"
 #include "bloodsuckers\code\bloodsucker\bloodsucker_datum.dm"

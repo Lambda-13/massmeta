@@ -1,20 +1,3 @@
-## Module ID: ANTAGONISTS
+Кровососы были взяты с Фульпов: https://github.com/fulpstation/fulpstation
 
-### Defines:
-
-- _defines/antagonists.dm
-
-### TG Proc/File Changes:
-
-- N/A
-
-### TGUI Files:
-
-- AntagInfoBloodsucker.tsx
-- AntagInfoRevengeVassal.tsx
-- KindredBook.tsx
-- bloodsucker.ts
-- bloodsuckerbreakout.ts
-- demoninfiltration.ts
-- sinfuldemon.ts
-- vampiricaccident.ts
+https://github.com/fulpstation/fulpstation/tree/master/fulp_modules/features/antagonists/bloodsuckers
