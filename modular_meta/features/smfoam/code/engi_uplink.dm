@@ -1,4 +1,4 @@
-/datum/uplink_item/role_restricted/turretbox
+/datum/uplink_item/role_restricted/smfoam
 	name = "Supermatter Mass Delivery Grenade"
 	desc = "A grenade that deploys stabilized crystal mass. Safe until activation."
 	item = /obj/item/grenade/supermatter_foam
