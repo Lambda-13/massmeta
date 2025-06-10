@@ -9,16 +9,16 @@
 	var/radius = 3
 	var/crystal_spawn_count = 5
 	var/activated = FALSE
-	var/shitfuck = FALSE
+	var/adminabuse = FALSE
 
 
 /obj/item/grenade/supermatter_foam/attack_self(mob/user)
 	if(!activated)
 		activated = TRUE
-		if(shitfuck)
+		if(adminabuse)
 			to_chat(user, span_notice("As you look at [src], your vision is going black. You try to throw [src] away but lose control...."))
 		to_chat(user, span_notice("You blow a kiss at [src], activating it! 5 seconds!"))
-		if(shitfuck)
+		if(adminabuse)
 			to_chat(user, span_notice("As [src] screeches and turns red you regain control! RUN FOR YOUR LIFE!"))
 		playsound(src, 'sound/effects/supermatter.ogg', 20, TRUE)
 		addtimer(CALLBACK(src, PROC_REF(detonate)), det_time)
@@ -40,14 +40,14 @@
 
 //admin arbuse
 
-/obj/item/grenade/supermatter_foam/shitfuck
+/obj/item/grenade/supermatter_foam/adminabuse
 	name = "Supermatter Foam Grenade"
 	desc = "Bigger is better. Ten times better, to be clear."
 	radius = 10
 	crystal_spawn_count = 150
-	shitfuck = TRUE
+	adminabuse = TRUE
 
-/obj/item/grenade/supermatter_foam/shitfuck/Initialize(mapload)
+/obj/item/grenade/supermatter_foam/adminabuse/Initialize(mapload)
 	. = ..()
 	transform = matrix(10, MATRIX_SCALE)
-	AddComponent(/datum/component/gps, pick("Shitfuck", "Universe Death", "Admin Watermelon", "Oh no", "langiS tnatsiD", "GOD IS HERE", "ImadethisitemonlyusingCHATGPT", "valid", "bsa target", "spongebob is my best friend"))
+	AddComponent(/datum/component/gps, pick("damn", "Universe Death", "Admin Watermelon", "Oh no", "langiS tnatsiD", "GOD IS HERE", "ImadethisitemonlyusingCHATGPT", "valid", "bsa target", "spongebob is my best friend"))
