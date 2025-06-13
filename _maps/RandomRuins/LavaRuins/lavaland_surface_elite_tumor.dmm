@@ -9,6 +9,13 @@
 "c" = (
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
+"H" = (
+/obj/item/organ/monster_core/regenerative_core/legion{
+	time_to_decay = 1
+	},
+/obj/effect/mob_spawn/corpse/human/legioninfested/skeleton/charred,
+/turf/open/misc/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
 
 (1,1,1) = {"
 a
@@ -70,7 +77,7 @@ a
 a
 a
 c
-c
+H
 c
 a
 a
