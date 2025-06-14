@@ -597,11 +597,6 @@
 /obj/item/food/meat/slab/synthmeat,
 /turf/open/floor/iron/freezer,
 /area/awaymission/cabin)
-"cH" = (
-/obj/effect/landmark/awaystart/snowcabin,
-/obj/structure/cable,
-/turf/open/floor/wood,
-/area/awaymission/cabin)
 "cI" = (
 /obj/structure/cable,
 /obj/structure/chair/office/light,
@@ -658,11 +653,6 @@
 "cP" = (
 /obj/structure/cable,
 /turf/open/floor/iron/white,
-/area/awaymission/cabin)
-"cQ" = (
-/obj/effect/landmark/awaystart/snowcabin,
-/obj/structure/cable,
-/turf/open/floor/carpet,
 /area/awaymission/cabin)
 "cS" = (
 /obj/machinery/button/door/directional/north{
@@ -796,6 +786,11 @@
 /area/awaymission/cabin)
 "eu" = (
 /obj/structure/table/wood/fancy,
+/turf/open/floor/wood,
+/area/awaymission/cabin)
+"ev" = (
+/obj/structure/table/wood/fancy,
+/obj/item/reagent_containers/cup/rag,
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "ew" = (
@@ -1274,6 +1269,11 @@
 	},
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/snowforest)
+"gL" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/plating,
+/area/awaymission/cabin)
 "gM" = (
 /obj/structure/closet,
 /obj/effect/decal/cleanable/dirt,
@@ -1426,6 +1426,13 @@
 "hq" = (
 /obj/machinery/vending/medical,
 /turf/open/floor/iron/white,
+/area/awaymission/cabin)
+"hr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/oil,
+/obj/effect/decal/cleanable/generic,
+/obj/structure/cable,
+/turf/open/floor/plating,
 /area/awaymission/cabin)
 "hs" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2313,6 +2320,11 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/wood,
 /area/awaymission/cabin)
+"lx" = (
+/obj/effect/landmark/awaystart/snowcabin,
+/obj/structure/cable,
+/turf/open/floor/wood,
+/area/awaymission/cabin)
 "lz" = (
 /obj/structure/sign/poster/official/cleanliness/directional/south,
 /turf/open/floor/iron/white,
@@ -2389,13 +2401,6 @@
 "ms" = (
 /turf/closed/indestructible/rock/snow/ice,
 /area/awaymission/cabin/caves)
-"mx" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/blood/oil,
-/obj/effect/decal/cleanable/generic,
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/awaymission/cabin)
 "mI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/directional/south,
@@ -2692,10 +2697,11 @@
 	},
 /turf/open/floor/plating/snowed/snow_cabin,
 /area/awaymission/cabin)
-"pn" = (
-/obj/effect/decal/cleanable/blood/oil,
-/turf/open/misc/asteroid/snow/snow_cabin,
-/area/awaymission/cabin/caves)
+"pm" = (
+/obj/effect/landmark/awaystart/snowcabin,
+/obj/structure/cable,
+/turf/open/floor/carpet,
+/area/awaymission/cabin)
 "pq" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -2892,13 +2898,6 @@
 	},
 /turf/open/floor/plating/snowed/snow_cabin,
 /area/awaymission/cabin/snowforest)
-"rk" = (
-/obj/machinery/light/directional/south,
-/obj/effect/landmark/awaystart/snowcabin,
-/obj/structure/sign/poster/official/report_crimes/directional/south,
-/obj/structure/cable,
-/turf/open/floor/carpet,
-/area/awaymission/cabin)
 "rK" = (
 /obj/effect/decal/cleanable/blood/gibs/body,
 /obj/effect/light_emitter{
@@ -3193,6 +3192,10 @@
 	},
 /turf/open/floor/plating/snowed/snow_cabin,
 /area/awaymission/cabin/snowforest/sovietsurface)
+"uz" = (
+/obj/effect/decal/cleanable/oil,
+/turf/open/misc/asteroid/snow/snow_cabin,
+/area/awaymission/cabin/caves)
 "uF" = (
 /obj/item/shard,
 /obj/effect/light_emitter{
@@ -3411,11 +3414,6 @@
 	},
 /turf/open/misc/ice/smooth,
 /area/awaymission/cabin/caves)
-"wS" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/blood/oil,
-/turf/open/floor/plating,
-/area/awaymission/cabin)
 "xa" = (
 /obj/item/paper/pamphlet/gateway,
 /turf/open/misc/ice/smooth,
@@ -4070,14 +4068,6 @@
 	},
 /turf/open/floor/plating/snowed/smoothed,
 /area/awaymission/cabin/caves)
-"EU" = (
-/obj/effect/decal/cleanable/glitter/blue{
-	desc = "It looks like fancy glitter to me.";
-	name = "icy wind"
-	},
-/obj/effect/decal/cleanable/blood/oil,
-/turf/open/misc/asteroid/snow/snow_cabin,
-/area/awaymission/cabin/caves)
 "Fp" = (
 /obj/effect/turf_decal/weather/snow/corner,
 /obj/effect/light_emitter{
@@ -4108,27 +4098,6 @@
 /area/awaymission/cabin/snowforest/sovietsurface)
 "FO" = (
 /obj/structure/light_construct/directional/south,
-/turf/open/misc/asteroid/snow/snow_cabin,
-/area/awaymission/cabin/caves)
-"FQ" = (
-/obj/structure/statue/snow/snowman{
-	anchored = 1;
-	name = "Because"
-	},
-/obj/item/clothing/head/costume/scarecrow_hat{
-	desc = "A replica straw hat that isn't actually made out of straw";
-	name = "synthetic straw hat";
-	pixel_x = -1;
-	pixel_y = 10
-	},
-/obj/item/gun/ballistic/shotgun/toy{
-	pixel_y = -2
-	},
-/obj/effect/light_emitter{
-	set_cap = 3;
-	set_luminosity = 6;
-	light_color = "#9bbbff"
-	},
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/caves)
 "FW" = (
@@ -4511,6 +4480,27 @@
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /turf/open/indestructible,
 /area/awaymission/cabin/caves/mountain)
+"LF" = (
+/obj/structure/statue/snow/snowman{
+	anchored = 1;
+	name = "Because"
+	},
+/obj/item/clothing/head/costume/scarecrow_hat{
+	desc = "A replica straw hat that isn't actually made out of straw";
+	name = "synthetic straw hat";
+	pixel_x = -1;
+	pixel_y = 10
+	},
+/obj/item/gun/ballistic/shotgun/toy{
+	pixel_y = -2
+	},
+/obj/effect/light_emitter{
+	set_cap = 3;
+	set_luminosity = 6;
+	light_color = "#9bbbff"
+	},
+/turf/open/misc/asteroid/snow/snow_cabin,
+/area/awaymission/cabin/caves)
 "LG" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/visible{
 	dir = 4
@@ -4971,11 +4961,6 @@
 	},
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/snowforest)
-"Sh" = (
-/obj/structure/table/wood/fancy,
-/obj/item/rag,
-/turf/open/floor/wood,
-/area/awaymission/cabin)
 "Si" = (
 /obj/effect/light_emitter{
 	set_cap = 3;
@@ -5330,6 +5315,14 @@
 	},
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/snowforest)
+"Wp" = (
+/obj/effect/decal/cleanable/glitter/blue{
+	desc = "It looks like fancy glitter to me.";
+	name = "icy wind"
+	},
+/obj/effect/decal/cleanable/oil,
+/turf/open/misc/asteroid/snow/snow_cabin,
+/area/awaymission/cabin/caves)
 "WF" = (
 /obj/item/flashlight/flare/candle/infinite,
 /turf/open/floor/plating/snowed,
@@ -5474,6 +5467,13 @@
 "Yp" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood,
+/area/awaymission/cabin)
+"YC" = (
+/obj/machinery/light/directional/south,
+/obj/effect/landmark/awaystart/snowcabin,
+/obj/structure/sign/poster/official/report_crimes/directional/south,
+/obj/structure/cable,
+/turf/open/floor/carpet,
 /area/awaymission/cabin)
 "YG" = (
 /obj/structure/chair{
@@ -25796,7 +25796,7 @@ eg
 an
 cT
 cV
-wS
+gL
 cV
 an
 xt
@@ -26309,7 +26309,7 @@ aq
 eg
 an
 cV
-wS
+gL
 cV
 cV
 an
@@ -28295,7 +28295,7 @@ ab
 ab
 ab
 ue
-FQ
+LF
 vh
 vh
 vh
@@ -29898,7 +29898,7 @@ eg
 an
 hb
 bU
-Sh
+ev
 eu
 cK
 cD
@@ -35039,7 +35039,7 @@ nV
 ei
 et
 hj
-mx
+hr
 hs
 et
 nV
@@ -35813,8 +35813,8 @@ aq
 aq
 aq
 eg
-cH
-cQ
+lx
+pm
 bb
 an
 xt
@@ -36071,8 +36071,8 @@ cp
 eg
 eg
 aq
-cQ
-rk
+pm
+YC
 an
 xt
 vh
@@ -36327,8 +36327,8 @@ aq
 aq
 aq
 eg
-cH
-cQ
+lx
+pm
 az
 an
 xt
@@ -51754,7 +51754,7 @@ gx
 tC
 tC
 tC
-EU
+Wp
 tC
 pv
 gx
@@ -52774,7 +52774,7 @@ Oe
 gx
 gx
 gx
-pn
+uz
 Oe
 gx
 gx
@@ -53807,10 +53807,10 @@ Oe
 IU
 Oe
 Oe
-EU
+Wp
 tC
 tC
-EU
+Wp
 xw
 gx
 gx
