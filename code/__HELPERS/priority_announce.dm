@@ -56,18 +56,23 @@
 		sound = SSstation.announcer.event_sounds[sound]
 
 	var/header
+	var/title_shit
 	switch(type)
 		if(ANNOUNCEMENT_TYPE_PRIORITY)
 			header = MAJOR_ANNOUNCEMENT_TITLE("Priority Announcement")
+			title_shit = "Priority Announcement"
 			if(length(title) > 0)
 				header += SUBHEADER_ANNOUNCEMENT_TITLE(title)
 		if(ANNOUNCEMENT_TYPE_CAPTAIN)
 			header = MAJOR_ANNOUNCEMENT_TITLE("Captain's Announcement")
+			title_shit = "Captain's Announcement"
 			GLOB.news_network.submit_article(text, "Captain's Announcement", NEWSCASTER_STATION_ANNOUNCEMENTS, null)
 		if(ANNOUNCEMENT_TYPE_SYNDICATE)
 			header = MAJOR_ANNOUNCEMENT_TITLE("Syndicate Captain's Announcement")
+			title_shit = "Syndicate Captain's Announcement"
 		else
 			header += generate_unique_announcement_header(title, sender_override)
+			title_shit = title
 
 	announcement_strings += ANNOUNCEMENT_HEADER(header)
 
@@ -90,6 +95,8 @@
 			GLOB.news_network.submit_article(title + "<br><br>" + text, "[command_name()]", NEWSCASTER_STATION_ANNOUNCEMENTS, null)
 		else
 			GLOB.news_network.submit_article(text, "[command_name()] Update", NEWSCASTER_STATION_ANNOUNCEMENTS, null)
+
+	send2announcement_webhook(title_shit, text, sender_override, color_override) // MASSMETA EDIT: Добавляем отправку анонсов в Discord
 
 /proc/print_command_report(text = "", title = null, announce=TRUE)
 	if(!title)
@@ -144,6 +151,12 @@
 
 	var/custom_sound = sound_override || (alert ? 'sound/announcer/notice/notice1.ogg' : 'sound/announcer/notice/notice2.ogg')
 	dispatch_announcement_to_players(finalized_announcement, players, custom_sound, should_play_sound)
+
+	var/text = message
+	if(title != null && title != "" && title == "Attention:")
+		send2announcement_webhook(title, text, color_override) // MASSMETA EDIT: Добавляем отправку анонсов в Discord
+	else
+		send2announcement_webhook("Attention", text, color_override) // MASSMETA EDIT: Добавляем отправку анонсов в Discord
 
 /// Sends an announcement about the level changing to players. Uses the passed in datum and the subsystem's previous security level to generate the message.
 /proc/level_announce(datum/security_level/selected_level, previous_level_number)

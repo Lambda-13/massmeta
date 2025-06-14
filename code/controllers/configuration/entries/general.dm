@@ -788,3 +788,10 @@
 
 /datum/config_entry/flag/generate_assets_in_init
 	default = FALSE
+
+/datum/config_entry/string/webmap_url
+	//ex: "https://webmap.affectedarc07.co.uk/maps/tgstation/"
+	default = ""
+
+/datum/config_entry/string/round_announce_webhook_url
+	default = ""

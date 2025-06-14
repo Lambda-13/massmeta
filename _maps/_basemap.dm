@@ -25,6 +25,16 @@
 		#include "map_files\Mining\Ocean.dmm"
 		// MASSMETA EDIT END
 
+		// MASSMETA EDIT BEGIN - Compiling our modular maps too!
+		#include "map_files\PubbyStation\PubbyStation.dmm"
+		#include "map_files\KiloStation\KiloStation.dmm"
+		#include "map_files\ProtoBoxStation\ProtoBoxStation.dmm"
+		#include "map_files\Rainstation\rainstation.dmm"
+		#include "map_files\protosstation\protos.dmm"
+		#include "map_files\bearcat\bearcat.dmm"
+		#include "map_files\Mining\Ocean.dmm"
+		// MASSMETA EDIT END
+
 		#ifdef CIBUILDING
 			#include "templates.dm"
 		#endif

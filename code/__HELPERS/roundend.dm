@@ -292,6 +292,8 @@ GLOBAL_LIST_INIT(achievements_unlocked, list())
 
 	world.TgsTriggerEvent("tg-Roundend", wait_for_completion = TRUE)
 
+	send2announcement_webhook("Round Ended", "[GLOB.round_id ? "Round [GLOB.round_id]" : "The round has"] just ended.", null, "green")
+
 	sleep(5 SECONDS)
 	ready_for_reboot = TRUE
 	standard_reboot()

@@ -1,0 +1,73 @@
+/**
+ * Copyright (c) 2020 Aleksej Komarov
+ * SPDX-License-Identifier: MIT
+ */
+
+.theme-flight {
+  &:root {
+    --flight-primary: #ffa600;
+    --flight-background: #1a1d1a;
+    --flight-background-dark: #0c0c0c;
+    --flight-background-section: #1d1d1d;
+    --flight-text: #dadada;
+    --flight-disabled: #686868;
+    --flight-selected: #0f0f0f;
+    --flight-outline: #ffa600;
+    --flight-candystripe: rgba(126, 98, 57, 0.5);
+
+    // Base
+    --color-base: var(--flight-background);
+    --color-section: var(--flight-background-section);
+    --color-primary: var(--flight-primary);
+    --color-secondary: var(--flight-primary);
+    --color-label: var(--flight-text);
+    --color-text: var(--flight-text);
+    --base-gradient-spread: 0;
+    --border-radius-unit: 0;
+    --transition-time-unit: 0.1s;
+    --font-family: inherit;
+  }
+
+  body {
+    overflow: auto;
+  }
+
+  .Layout__content {
+    background-image: none;
+  }
+
+  .Button {
+    border-width: 2px;
+    border-radius: 0;
+    background-color: var(--flight-background-dark);
+    color: var(--flight-text);
+    outline: 1px solid var(--flight-outline);
+    margin: 3px;
+
+    &:disabled {
+      color: var(--flight-disabled);
+      background-color: var(--flight-background-section);
+    }
+
+    &.Button--selected {
+      background-color: var(--flight-selected);
+    }
+  }
+
+  .candystripe:nth-child(odd) {
+    background-color: var(--flight-candystripe);
+  }
+
+  .Input {
+    border-color: var(--flight-primary);
+  }
+
+  .Modal,
+  .Section {
+    // Можно добавить специфичные стили, если нужно
+  }
+
+  .TitleBar {
+    background-color: var(--flight-background-section);
+  }
+}

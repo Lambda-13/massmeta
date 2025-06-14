@@ -42,7 +42,6 @@ Space Station 13 is a paranoia-laden round-based roleplaying game set against th
 **[How to compile in VSCode and other build options](tools/build/README.md).**
 
 ## Contributors
-
 [Guides for Contributors](.github/CONTRIBUTING.md)
 
 **Если вы хотите, чтобы ваша фича попала в репозиторий на показ игрокам, то велком в `#Code-chat` в [нашем Дискорде](https://discord.gg/lambda13).**

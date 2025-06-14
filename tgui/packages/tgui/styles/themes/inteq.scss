@@ -1,0 +1,89 @@
+/**
+ * Copyright (c) 2020 Aleksej Komarov
+ * SPDX-License-Identifier: MIT
+ */
+
+.theme-inteq {
+  &:root {
+    --inteq-good: #ffdc17;
+    --inteq-primary: #ffc832;
+    --inteq-average: #ffedbc;
+    --inteq-bad: #ffe5c9;
+
+    --color-bg: #5F380E;
+    --color-bg-start: #B18B25;
+    --color-bg-end: #5F380E;
+    --color-bg-grad-spread: 6%;
+    --border-radius: 2px;
+
+    --button-color-default: var(--inteq-primary);
+    --button-color-disabled: #665c3c;
+    --button-color-selected: #cfba47;
+    --button-color-caution: #ffae42;
+    --button-color-danger: #ffff00;
+
+    --tooltip-background: #2d1400;
+    --section-separator-color: #d6ca85;
+    --divider-color: #d6ca85;
+    --progress-bar-background: rgba(0, 0, 0, 0.5);
+
+    --titlebar-background: #5f380e;
+    --titlebar-shadow: rgba(0, 0, 0, 0.1);
+    --titlebar-text: #cfba47;
+
+    --input-color: #b18b25;
+    --input-background: #cfba47;
+  }
+
+  .Input {
+    color: var(--input-color);
+    background-color: var(--input-background);
+  }
+
+  .Layout__content {
+    background-image: none;
+  }
+
+  .Button {
+    border-color: var(--color-bg-end);
+    background-color: var(--button-color-default);
+
+    &:disabled {
+      background-color: var(--button-color-disabled);
+    }
+
+    &--selected {
+      background-color: var(--button-color-selected);
+    }
+
+    &--caution {
+      background-color: var(--button-color-caution);
+    }
+
+    &--danger {
+      background-color: var(--button-color-danger);
+    }
+  }
+
+  .Tooltip {
+    background-color: var(--tooltip-background);
+  }
+
+  .Section {
+    border-bottom: 1px solid var(--section-separator-color);
+  }
+
+  .Divider {
+    background-color: var(--divider-color);
+  }
+
+  .ProgressBar {
+    background-color: var(--progress-bar-background);
+  }
+
+  .TitleBar {
+    background-color: var(--titlebar-background);
+    box-shadow: 0 2px 4px var(--titlebar-shadow);
+    color: var(--titlebar-text);
+  }
+}
