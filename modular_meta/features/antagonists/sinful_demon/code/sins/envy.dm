@@ -47,7 +47,7 @@
 	var/obj/item/card/id/ID = target.get_idcard()
 	stored_access = LAZYCOPY(ID?.access)
 	caster.fully_replace_character_name(caster.real_name, target.dna.real_name)
-	target.dna.transfer_identity(caster, transfer_SE=1)
+	target.dna.copy_dna(caster.dna, COPY_DNA_SE|COPY_DNA_SPECIES)
 	caster.updateappearance(mutcolor_update=1)
 	caster.domutcheck()
 	caster.visible_message(

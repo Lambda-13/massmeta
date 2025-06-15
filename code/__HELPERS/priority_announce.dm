@@ -56,23 +56,23 @@
 		sound = SSstation.announcer.event_sounds[sound]
 
 	var/header
-	var/title_shit
+	var/title_shit // MASSMETA EDIT (вебхуки)
 	switch(type)
 		if(ANNOUNCEMENT_TYPE_PRIORITY)
 			header = MAJOR_ANNOUNCEMENT_TITLE("Priority Announcement")
-			title_shit = "Priority Announcement"
+			title_shit = "Priority Announcement" // MASSMETA EDIT (вебхуки)
 			if(length(title) > 0)
 				header += SUBHEADER_ANNOUNCEMENT_TITLE(title)
 		if(ANNOUNCEMENT_TYPE_CAPTAIN)
 			header = MAJOR_ANNOUNCEMENT_TITLE("Captain's Announcement")
-			title_shit = "Captain's Announcement"
+			title_shit = "Captain's Announcement" // MASSMETA EDIT (вебхуки)
 			GLOB.news_network.submit_article(text, "Captain's Announcement", NEWSCASTER_STATION_ANNOUNCEMENTS, null)
 		if(ANNOUNCEMENT_TYPE_SYNDICATE)
 			header = MAJOR_ANNOUNCEMENT_TITLE("Syndicate Captain's Announcement")
-			title_shit = "Syndicate Captain's Announcement"
+			title_shit = "Syndicate Captain's Announcement" // MASSMETA EDIT (вебхуки)
 		else
 			header += generate_unique_announcement_header(title, sender_override)
-			title_shit = title
+			title_shit = title // MASSMETA EDIT (вебхуки)
 
 	announcement_strings += ANNOUNCEMENT_HEADER(header)
 
@@ -152,11 +152,13 @@
 	var/custom_sound = sound_override || (alert ? 'sound/announcer/notice/notice1.ogg' : 'sound/announcer/notice/notice2.ogg')
 	dispatch_announcement_to_players(finalized_announcement, players, custom_sound, should_play_sound)
 
+	// MASSMETA EDIT BEGIN (вебхуки)
 	var/text = message
 	if(title != null && title != "" && title == "Attention:")
 		send2announcement_webhook(title, text, color_override) // MASSMETA EDIT: Добавляем отправку анонсов в Discord
 	else
 		send2announcement_webhook("Attention", text, color_override) // MASSMETA EDIT: Добавляем отправку анонсов в Discord
+	// MASSMETA EDIT END
 
 /// Sends an announcement about the level changing to players. Uses the passed in datum and the subsystem's previous security level to generate the message.
 /proc/level_announce(datum/security_level/selected_level, previous_level_number)
@@ -202,11 +204,7 @@
 /proc/dispatch_announcement_to_players(announcement, list/players = GLOB.player_list, sound_override = null, should_play_sound = TRUE)
 	var/sound_to_play = !isnull(sound_override) ? sound_override : 'sound/announcer/notice/notice2.ogg'
 
-	// note for later: low-hanging fruit to convert to astype() behind an experiment define whenever the 516 beta releases
-	// var/datum/callback/should_play_sound_callback = astype(should_play_sound)
-	var/datum/callback/should_play_sound_callback
-	if(istype(should_play_sound, /datum/callback))
-		should_play_sound_callback = should_play_sound
+	var/datum/callback/should_play_sound_callback = astype(should_play_sound)
 
 	for(var/mob/target in players)
 		if(isnewplayer(target) || !target.can_hear())

@@ -38,7 +38,7 @@
 	. = ..()
 	AddComponent(/datum/component/stationloving, FALSE, TRUE)
 
-/obj/item/book/kindred/try_carve(obj/item/carving_item, mob/living/user, params)
+/obj/item/book/kindred/can_vandalize(mob/living/user, obj/item/tool)
 	to_chat(user, span_notice("You feel the gentle whispers of a Librarian telling you not to cut [starting_title]."))
 	return FALSE
 

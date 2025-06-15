@@ -292,6 +292,7 @@ GLOBAL_LIST_INIT(achievements_unlocked, list())
 
 	world.TgsTriggerEvent("tg-Roundend", wait_for_completion = TRUE)
 
+	// MASSMETA EDIT (вебхуки)
 	send2announcement_webhook("Round Ended", "[GLOB.round_id ? "Round [GLOB.round_id]" : "The round has"] just ended.", null, "green")
 
 	sleep(5 SECONDS)

@@ -4,5 +4,5 @@
 		playsound(user, 'sound/items/handling/lead_pipe/lead_pipe_drop.ogg', (20 + i * 10), FALSE)
 		user.AddElement(/datum/element/squish, 1.5 SECONDS)
 		sleep(1.5/8 SECONDS)
-	user.gib()
+	user.gib(DROP_ALL_REMAINS)
 	return MANUAL_SUICIDE

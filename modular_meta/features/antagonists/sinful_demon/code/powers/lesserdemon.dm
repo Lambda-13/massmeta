@@ -21,7 +21,7 @@
 	attack_sound = 'sound/effects/magic/demon_attack1.ogg'
 	death_sound = 'sound/effects/magic/demon_dies.ogg'
 	death_message = "wails in anger and fear as it collapses in defeat!"
-	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	atmos_requirements  = null
 	minbodytemp = 250 //Weak to cold
 	maxbodytemp = INFINITY
 	faction = list("hell")
@@ -66,4 +66,4 @@
 
 /mob/living/simple_animal/lesserdemon/Initialize(mapload)
 	. = ..()
-	AddElement(/datum/element/lifesteal, damage_overtime = 2)
+	AddElement(/datum/element/lifesteal, 2)

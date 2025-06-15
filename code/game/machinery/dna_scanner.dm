@@ -16,7 +16,7 @@
 	var/precision_coeff = 1
 	var/message_cooldown
 	var/breakout_time = 1200
-	var/obj/machinery/computer/scan_consolenew/linked_console = null
+	var/obj/machinery/computer/dna_console/linked_console = null
 
 /obj/machinery/dna_scannernew/RefreshParts()
 	. = ..()
@@ -125,7 +125,7 @@
 		return
 	open_machine()
 
-/obj/machinery/dna_scannernew/attackby(obj/item/item, mob/user, list/modifiers)
+/obj/machinery/dna_scannernew/attackby(obj/item/item, mob/user, list/modifiers, list/attack_modifiers)
 
 	if(!occupant && default_deconstruction_screwdriver(user, icon_state, icon_state, item))//sent icon_state is irrelevant...
 		update_appearance()//..since we're updating the icon here, since the scanner can be unpowered when opened/closed
@@ -184,6 +184,10 @@
 	. = ..()
 	icon_state = "datadisk[rand(0,7)]"
 	add_overlay("datadisk_gene")
+	if(length(genetic_makeup_buffer))
+		var/datum/blood_type = genetic_makeup_buffer["blood_type"]
+		if(blood_type)
+			blood_type = get_blood_type(blood_type) || random_human_blood_type()
 
 /obj/item/disk/data/debug
 	name = "\improper CentCom DNA disk"
@@ -193,8 +197,8 @@
 /obj/item/disk/data/debug/Initialize(mapload)
 	. = ..()
 	// Grabs all instances of mutations and adds them to the disk
-	for(var/datum/mutation/human/mut as anything in subtypesof(/datum/mutation/human))
-		var/datum/mutation/human/ref = GET_INITIALIZED_MUTATION(mut)
+	for(var/datum/mutation/mut as anything in subtypesof(/datum/mutation))
+		var/datum/mutation/ref = GET_INITIALIZED_MUTATION(mut)
 		mutations += ref
 
 /obj/item/disk/data/attack_self(mob/user)

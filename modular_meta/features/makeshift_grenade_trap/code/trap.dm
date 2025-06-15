@@ -19,6 +19,13 @@
 	)
 	AddElement(/datum/element/connect_loc, loc_connections)
 
+/obj/structure/tripwire/on_craft_completion(list/components, datum/crafting_recipe/current_recipe, atom/crafter)
+	. = ..()
+	stretching = locate(/obj/item/grenade) in contents
+
+	message_admins("[ADMIN_LOOKUPFLW(crafter)] поставил растяжку[ADMIN_COORDJMP(crafter)]")
+	log_game("[key_name(crafter)] поставил растяжку[COORD(crafter)]")
+
 /obj/structure/tripwire/proc/activate()
 	if(stretching)
 		stretching.detonate(owner)
@@ -34,10 +41,10 @@
 			return
 		if(ismouse(MM))
 			return
-		if(ishuman(AM))
-			var/mob/living/carbon/human/H
-			if(H.move_intent == MOVE_INTENT_WALK)
-				to_chat(AM, span_notice("Carefully step over the [src]."))
+		if(iscarbon(MM))
+			var/mob/living/carbon/C = MM
+			if(C.move_intent == MOVE_INTENT_WALK)
+				to_chat(C, span_notice("Carefully step over the [src]."))
 				return
 	activate()
 
@@ -57,26 +64,14 @@
 			qdel(src)
 	..()
 
-/obj/structure/tripwire/CheckParts(list/parts_list)
-	stretching = locate() in parts_list
-	if(!stretching)
-		qdel(src)
-		return
-	return ..()
-
 /datum/crafting_recipe/tripwire
 	name = "stretch"
 	time = 5 SECONDS
 	result = /obj/structure/tripwire
-	reqs = list(/obj/item/stack/cable_coil = 30,
-				/obj/item/grenade = 1)
+	reqs = list(
+		/obj/item/stack/cable_coil = 30,
+		/obj/item/grenade = 1
+		)
 	parts = list(/obj/item/grenade = 1)
 	time = 5 SECONDS
 	category = CAT_WEAPON_MELEE
-
-/datum/crafting_recipe/tripwire/on_craft_completion(mob/user, atom/result)
-	. = ..()
-	var/obj/structure/tripwire/TW = result
-	TW.owner = user
-	message_admins("[ADMIN_LOOKUPFLW(user)] поставил растяжку[ADMIN_COORDJMP(result)]")
-	log_game("[key_name(user)] поставил растяжку[COORD(result)]")

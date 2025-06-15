@@ -3099,7 +3099,7 @@
 /area/ruin/syndicate_lava_base/bar)
 "Ev" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/cup/rag{
+/obj/item/rag{
 	pixel_x = -4;
 	pixel_y = 9
 	},
