@@ -2610,7 +2610,7 @@
 /turf/open/floor/plating,
 /area/station/service/abandoned_gambling_den)
 "akh" = (
-/obj/effect/decal/cleanable/blood/oil/{
+/obj/effect/decal/cleanable/blood/oil{
 	icon_state = "floor5"
 	},
 /turf/open/floor/plating,
@@ -3374,7 +3374,7 @@
 /turf/open/floor/wood,
 /area/station/service/abandoned_gambling_den)
 "amG" = (
-/obj/effect/decal/cleanable/blood/oil/{
+/obj/effect/decal/cleanable/blood/oil{
 	icon_state = "floor6"
 	},
 /obj/effect/mapping_helpers/broken_floor,
@@ -9462,7 +9462,7 @@
 /obj/machinery/camera/directional/north{
 	c_tag = "Dormitory Cyborg Recharging Station"
 	},
-/obj/effect/decal/cleanable/blood/oil/,
+/obj/effect/decal/cleanable/blood/oil,
 /obj/machinery/newscaster/directional/east,
 /turf/open/floor/iron/freezer,
 /area/station/commons/toilet/restrooms)
@@ -11088,7 +11088,6 @@
 /turf/closed/wall,
 /area/station/service/hydroponics)
 "aRM" = (
-/obj/structure/disposalpipe/segment,
 /obj/machinery/door/airlock/maintenance{
 	name = "Hydroponics Maintenance"
 	},
@@ -14415,7 +14414,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/aft)
 "bgE" = (
-/obj/effect/decal/cleanable/blood/oil/,
+/obj/effect/decal/cleanable/blood/oil,
 /obj/effect/decal/cleanable/blood/gibs/robot_debris{
 	icon_state = "gib3"
 	},
@@ -20255,7 +20254,6 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/engine)
 "bHU" = (
-/obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/trimline/blue/line,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
@@ -20408,10 +20406,6 @@
 /obj/structure/grille,
 /turf/open/floor/plating,
 /area/station/maintenance/department/science/xenobiology)
-"bIU" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/closed/wall,
-/area/station/service/chapel/dock)
 "bIV" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/sign/warning/vacuum/external,
@@ -20491,7 +20485,6 @@
 /obj/machinery/door/airlock/medical{
 	name = "Psychology"
 	},
-/obj/structure/disposalpipe/segment,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/firedoor,
 /obj/structure/cable,
@@ -20827,7 +20820,7 @@
 /turf/open/floor/iron/dark,
 /area/station/service/chapel/dock)
 "bLt" = (
-/obj/effect/decal/cleanable/blood/oil/{
+/obj/effect/decal/cleanable/blood/oil{
 	icon_state = "floor6"
 	},
 /obj/effect/decal/cleanable/blood/gibs/robot_debris/old,
@@ -21101,7 +21094,7 @@
 /turf/open/floor/iron/dark,
 /area/station/service/abandoned_gambling_den/gaming)
 "bMD" = (
-/obj/effect/decal/cleanable/blood/oil/,
+/obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/iron/dark,
 /area/station/service/abandoned_gambling_den/gaming)
 "bME" = (
@@ -27011,10 +27004,6 @@
 /obj/effect/landmark/start/chief_engineer,
 /turf/open/floor/iron,
 /area/station/command/heads_quarters/ce)
-"cqW" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/closed/mineral,
-/area/station/service/chapel/asteroid/monastery)
 "cqX" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/lattice,
@@ -28541,7 +28530,7 @@
 /turf/open/floor/iron/dark,
 /area/station/medical/abandoned)
 "cIt" = (
-/obj/effect/decal/cleanable/blood/oil/{
+/obj/effect/decal/cleanable/blood/oil{
 	icon_state = "floor6"
 	},
 /obj/item/radio/intercom/directional/west,
@@ -36062,7 +36051,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/blood/oil/,
+/obj/effect/decal/cleanable/blood/oil,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/station/maintenance/disposal)
@@ -36208,7 +36197,6 @@
 /obj/effect/turf_decal/trimline/blue/line{
 	dir = 1
 	},
-/obj/structure/disposalpipe/segment,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -38178,7 +38166,7 @@
 /area/station/ai_monitored/turret_protected/ai_sat_ext_as)
 "lqc" = (
 /obj/item/toy/gun,
-/obj/effect/decal/cleanable/blood/oil/,
+/obj/effect/decal/cleanable/blood/oil,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/plating,
 /area/station/maintenance/department/security/brig)
@@ -42537,7 +42525,7 @@
 /turf/open/floor/carpet,
 /area/station/medical/psychology)
 "pdq" = (
-/obj/effect/decal/cleanable/blood/oil/,
+/obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/plating,
 /area/station/security/range)
 "pds" = (
@@ -46470,7 +46458,7 @@
 	dir = 8
 	},
 /obj/structure/sign/poster/contraband/random/directional/east,
-/obj/effect/decal/cleanable/blood/oil/{
+/obj/effect/decal/cleanable/blood/oil{
 	icon_state = "floor6"
 	},
 /turf/open/floor/iron/dark,
@@ -48732,7 +48720,7 @@
 /turf/open/floor/carpet,
 /area/station/service/abandoned_gambling_den)
 "uaE" = (
-/obj/effect/decal/cleanable/blood/oil/{
+/obj/effect/decal/cleanable/blood/oil{
 	icon_state = "floor6"
 	},
 /turf/open/floor/plating,
@@ -49977,9 +49965,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
@@ -50442,7 +50427,7 @@
 /area/station/engineering/main)
 "vlF" = (
 /obj/item/coin/silver,
-/obj/effect/decal/cleanable/blood/oil/{
+/obj/effect/decal/cleanable/blood/oil{
 	icon_state = "floor5"
 	},
 /obj/structure/light_construct/small{
@@ -62927,7 +62912,7 @@ aaa
 aaa
 cjB
 aaa
-aaa
+cfN
 aaa
 aaa
 aaa
@@ -63185,7 +63170,7 @@ fIT
 cIb
 fIT
 cfN
-aaa
+cfN
 aaa
 aaa
 aaa
@@ -63416,8 +63401,8 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
+cfN
+cfN
 aaa
 aaa
 aaa
@@ -63443,7 +63428,7 @@ rYB
 fIT
 cfN
 cfN
-aaa
+cfN
 aaa
 aaa
 aaa
@@ -63672,10 +63657,10 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
+cfN
+cfN
+cfN
+cfN
 aaa
 aaa
 cBM
@@ -63700,8 +63685,8 @@ cjC
 fIT
 cfN
 cfN
-aaa
-aaa
+cfN
+cfN
 aaa
 aaa
 aaa
@@ -63928,9 +63913,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+cfN
+cfN
+cfN
 cfN
 cfN
 cfN
@@ -63958,7 +63943,7 @@ fIT
 slf
 cfN
 cfN
-aaa
+cfN
 aaa
 aaa
 aaa
@@ -64186,7 +64171,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+cfN
 cfN
 bZY
 bZY
@@ -64215,8 +64200,8 @@ cjZ
 slf
 cfN
 cfN
-aaa
-aaa
+cfN
+cfN
 aaa
 aaa
 aaa
@@ -64472,8 +64457,8 @@ cka
 slf
 cfN
 cfN
-aaa
-aaa
+cfN
+cfN
 aaa
 aaa
 aaa
@@ -65728,8 +65713,8 @@ aaa
 aqG
 bNs
 cfN
-cqW
-cqW
+cfN
+cfN
 cfN
 cfN
 bZY
@@ -66241,7 +66226,7 @@ aaa
 aaa
 aqG
 bNs
-cqW
+cfN
 bOw
 cfN
 bOw
@@ -68539,7 +68524,7 @@ aaa
 aaa
 bHL
 bHL
-bIU
+bHL
 bHM
 bHM
 bHM
@@ -70158,7 +70143,7 @@ aaa
 cfN
 cfN
 cfN
-aaa
+cfN
 aaa
 aaa
 aaa
@@ -70415,7 +70400,7 @@ cfN
 cfN
 cfN
 cfN
-aaa
+cfN
 aaa
 aaa
 aaa
@@ -70672,7 +70657,7 @@ cfN
 cfN
 cfN
 cfN
-aaa
+cfN
 aaa
 aaa
 aaa
@@ -70929,7 +70914,7 @@ cfN
 cfN
 cfN
 cfN
-aaa
+cfN
 aaa
 aaa
 aaa
@@ -73726,7 +73711,7 @@ kVM
 gXh
 whJ
 cfN
-aaa
+cfN
 aaa
 aaa
 aaa

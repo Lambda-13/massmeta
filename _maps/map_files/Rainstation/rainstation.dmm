@@ -55244,7 +55244,6 @@
 /turf/open/floor/iron/grimy,
 /area/station/command/meeting_room)
 "tvI" = (
-/obj/structure/table/wood/poker,
 /obj/effect/spawner/random/maintenance,
 /obj/structure/table/wood,
 /turf/open/floor/wood,
@@ -58192,7 +58191,6 @@
 /turf/open/floor/iron/smooth,
 /area/station/cargo/storage)
 "wfU" = (
-/obj/structure/table,
 /obj/structure/table,
 /obj/item/storage/fancy/cigarettes,
 /turf/open/floor/plating,
