@@ -428,7 +428,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/turf/open/space/basic,
 /area/station/ai_monitored/turret_protected/ai)
 "bR" = (
 /obj/item/clothing/glasses/welding,
@@ -477,7 +477,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
-/obj/effect/decal/cleanable/xenoblood,
+/obj/effect/decal/cleanable/blood/xeno,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "ca" = (
@@ -554,7 +554,7 @@
 /area/station/construction)
 "cv" = (
 /obj/effect/turf_decal/bot,
-/obj/effect/decal/cleanable/xenoblood,
+/obj/effect/decal/cleanable/blood/xeno,
 /turf/open/floor/plating,
 /area/station/cargo/storage)
 "cx" = (
@@ -570,7 +570,6 @@
 "cy" = (
 /obj/structure/table/wood,
 /obj/machinery/chem_dispenser/drinks,
-/obj/structure/table/wood,
 /turf/open/floor/wood,
 /area/station/maintenance/space_hut/cabin)
 "cz" = (
@@ -854,7 +853,7 @@
 /obj/effect/turf_decal/loading_area{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/xenoblood,
+/obj/effect/decal/cleanable/blood/xeno,
 /obj/item/clothing/neck/link_scryer/loaded,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
@@ -1895,7 +1894,7 @@
 /turf/open/floor/wood,
 /area/station/commons/dorms/room3)
 "iS" = (
-/obj/effect/decal/cleanable/xenoblood,
+/obj/effect/decal/cleanable/blood/xeno,
 /obj/item/clothing/neck/link_scryer/loaded,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
@@ -3096,7 +3095,6 @@
 "oA" = (
 /obj/structure/table/wood,
 /obj/machinery/chem_dispenser/drinks/beer,
-/obj/structure/table/wood,
 /turf/open/floor/wood,
 /area/station/maintenance/space_hut/cabin)
 "oD" = (
@@ -3613,7 +3611,7 @@
 "ra" = (
 /obj/machinery/airalarm/directional/west,
 /obj/machinery/light/small/directional/south,
-/obj/effect/decal/cleanable/robot_debris,
+/obj/effect/decal/cleanable/blood/gibs/robot_debris,
 /turf/open/floor/iron/dark/textured_large,
 /area/station/cargo/storage)
 "rb" = (
@@ -3908,7 +3906,7 @@
 	dir = 1
 	},
 /obj/machinery/holopad,
-/obj/effect/decal/cleanable/oil,
+/obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/iron/dark/textured_large,
 /area/station/cargo/storage)
 "sp" = (
@@ -3952,7 +3950,7 @@
 /area/station/commons/dorms/room1)
 "sw" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/oil,
+/obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/plating,
 /area/station/maintenance/hallway/abandoned_recreation)
 "sy" = (
@@ -4521,7 +4519,7 @@
 "vi" = (
 /obj/structure/cable,
 /obj/machinery/quantum_server,
-/obj/effect/decal/cleanable/oil/streak,
+/obj/effect/decal/cleanable/blood/splatter/oil,
 /turf/open/floor/iron/dark/smooth_corner{
 	dir = 4
 	},
@@ -4609,7 +4607,7 @@
 /area/station/cargo/storage)
 "vK" = (
 /obj/structure/table/wood/fancy,
-/obj/item/reagent_containers/cup/rag,
+/obj/item/rag,
 /turf/open/floor/wood,
 /area/station/service/bar)
 "vL" = (
@@ -7748,7 +7746,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/xenoblood,
+/obj/effect/decal/cleanable/blood/xeno,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "Kr" = (
@@ -8330,7 +8328,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/xenoblood,
+/obj/effect/decal/cleanable/blood/xeno,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "NB" = (
@@ -9397,7 +9395,7 @@
 /area/icemoon/surface/outdoors/nospawn)
 "SJ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/oil,
+/obj/effect/decal/cleanable/blood/oil,
 /obj/effect/decal/cleanable/generic,
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -10866,7 +10864,7 @@
 /area/station/engineering/storage_shared)
 "ZO" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/xenoblood,
+/obj/effect/decal/cleanable/blood/xeno,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "ZP" = (
@@ -300464,7 +300462,7 @@ Kl
 KE
 KE
 Zy
-nK
+KE
 Kl
 Kl
 eH
