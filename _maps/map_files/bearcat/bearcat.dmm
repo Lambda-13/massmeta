@@ -2782,11 +2782,6 @@
 /area/station/construction)
 "pL" = (
 /obj/structure/cable,
-/obj/machinery/door/window/brigdoor/left/directional/west{
-	name = "Primary AI Core Access";
-	req_access = list("ai_upload");
-	dir = 4
-	},
 /obj/machinery/light/floor,
 /mob/living/silicon/robot/shell/cell,
 /turf/open/floor/iron/dark/smooth_large,
