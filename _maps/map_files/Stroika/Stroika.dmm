@@ -2894,10 +2894,6 @@
 /obj/structure/alien/weeds/node,
 /turf/open/floor/iron/dark/textured_large,
 /area/station/cargo/storage)
-"nK" = (
-/obj/structure/lattice,
-/turf/closed/mineral/random/snow/high_chance,
-/area/station/hallway/secondary/exit/departure_lounge)
 "nL" = (
 /turf/closed/wall/mineral/wood,
 /area/station/service/bar/atrium)
@@ -302004,7 +302000,7 @@ KE
 KE
 Kl
 Zy
-nK
+KE
 Kl
 Kl
 eH

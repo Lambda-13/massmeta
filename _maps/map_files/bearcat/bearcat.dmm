@@ -4373,9 +4373,6 @@
 /obj/machinery/button/elevator/directional/west{
 	id = "bearcat_cargo_lift"
 	},
-/obj/machinery/button/elevator/directional/west{
-	id = "bearcat_cargo_lift"
-	},
 /obj/machinery/camera/autoname/directional/west,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
@@ -5901,13 +5898,12 @@
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
 "FC" = (
-/obj/machinery/door/window/left/directional/east{
-	req_access = list("engineering");
-	dir = 1
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/window/left/directional/north{
+	req_access = list("engineering")
+	},
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/floor2/port)
 "FD" = (
@@ -8100,14 +8096,13 @@
 "Rc" = (
 /obj/structure/easel,
 /obj/item/canvas/twentythree_twentythree,
-/obj/machinery/door/window/left/directional/east{
-	req_access = list("engineering");
-	dir = 2
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/light/small/directional/west,
+/obj/machinery/door/window/left/directional/south{
+	req_access = list("engineering")
+	},
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/floor3/port)
 "Rf" = (

@@ -3033,9 +3033,6 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/recharger{
-	pixel_y = 4
-	},
 /turf/open/floor/iron/dark/smooth_half{
 	dir = 4
 	},
@@ -6800,9 +6797,6 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 4
-	},
 /obj/effect/turf_decal/trimline/purple/filled/end{
 	dir = 8
 	},
@@ -12892,11 +12886,14 @@
 	},
 /area/station/hallway/primary/central/aft)
 "jPc" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
-/obj/structure/lattice,
-/obj/structure/lattice,
-/turf/open/space/basic,
-/area/space/nearstation)
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/structure/disposalpipe/junction/flip{
+	dir = 8
+	},
+/turf/open/floor/catwalk_floor/iron_smooth,
+/area/station/cargo/storage)
 "jPA" = (
 /obj/machinery/announcement_system,
 /obj/machinery/requests_console/directional/north{
@@ -15945,6 +15942,9 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/bot,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
 /turf/open/floor/iron/smooth,
 /area/station/cargo/storage)
 "mdj" = (
@@ -17302,7 +17302,6 @@
 /turf/open/floor/plating,
 /area/station/medical/pharmacy)
 "njE" = (
-/obj/machinery/disposal/bin,
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 8
 	},
@@ -17312,7 +17311,11 @@
 /obj/effect/turf_decal/siding/thinplating_new{
 	dir = 4
 	},
-/obj/effect/turf_decal/delivery,
+/obj/structure/table/reinforced,
+/obj/item/clothing/head/cone{
+	pixel_x = -4;
+	pixel_y = 4
+	},
 /turf/open/floor/iron/textured_edge{
 	dir = 8
 	},
@@ -21957,12 +21960,12 @@
 "qts" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/trimline/purple/filled/line,
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 1
 	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron/dark,
 /area/station/science/server)
 "qut" = (
@@ -26384,11 +26387,6 @@
 /turf/open/floor/iron/half,
 /area/station/engineering/atmos/pumproom)
 "tYZ" = (
-/obj/machinery/door/window/brigdoor/left/directional/north{
-	name = "Brig Control";
-	req_access = list("armory");
-	dir = 4
-	},
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 5
 	},
@@ -26405,6 +26403,10 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/window/brigdoor/right/directional/east{
+	name = "Brig Control";
+	req_access = list("armory")
+	},
 /turf/open/floor/iron/textured_edge{
 	dir = 4
 	},
@@ -30810,6 +30812,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
 /area/station/ai_monitored/aisat/exterior)
+"xnu" = (
+/obj/structure/lattice,
+/obj/structure/grille,
+/turf/open/space/basic,
+/area/space/nearstation)
 "xnU" = (
 /obj/structure/fluff/tram_rail/electric/anchor{
 	dir = 1
@@ -31459,9 +31466,6 @@
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/structure/cable,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 8
-	},
 /obj/effect/turf_decal/trimline/purple/filled/end{
 	dir = 4
 	},
@@ -31970,7 +31974,6 @@
 /turf/closed/wall/r_wall,
 /area/station/security/warden)
 "ylb" = (
-/obj/structure/grille,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -53224,8 +53227,8 @@ ndX
 tGi
 ndX
 ibV
-ndX
-ndX
+xnu
+xnu
 ndX
 ndX
 ndX
@@ -57322,7 +57325,7 @@ mTt
 ndX
 ctp
 wae
-jPc
+uqt
 uqt
 vvl
 hzH
@@ -61453,7 +61456,7 @@ voZ
 rip
 kvv
 ajK
-hqi
+jPc
 mde
 usi
 pBU
