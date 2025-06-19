@@ -12896,7 +12896,7 @@
 /area/station/science/xenobiology)
 "epN" = (
 /obj/effect/spawner/structure/window/reinforced,
-/turf/closed/wall,
+/turf/open/space/basic,
 /area/station/maintenance/port/greater)
 "eqx" = (
 /obj/machinery/conveyor{
@@ -50991,7 +50991,6 @@
 "qOv" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
-/obj/structure/disposalpipe/segment,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass{
 	name = "Chapel Hallway"
