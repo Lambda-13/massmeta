@@ -3,5 +3,4 @@
 
 #include "antagonists.dm"
 #include "hardsuit.dm"
-#include "maps.dm"
 #include "re_hooch_heals_assistants.dm"

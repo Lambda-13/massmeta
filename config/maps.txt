@@ -81,10 +81,6 @@ endmap
 map stroika
 endmap
 
-map rainstation
-	votable
-endmap
-
 map protosstation
 	minplayers 0
 	maxplayers 25

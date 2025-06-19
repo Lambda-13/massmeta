@@ -1,11 +1,4 @@
 #include "code\protos\shuttles.dm"
 
-#include "code\rainworld\areas\mining.dm"
-#include "code\rainworld\mapgen\OceanGenerator.dm"
-#include "code\rainworld\ruins\rainworld.dm"
-#include "code\rainworld\ore_vent.dm"
-#include "code\rainworld\rods.dm"
-#include "code\rainworld\turf.dm"
-
 #include "code\stroika\areas.dm"
 #include "code\stroika\stroika_assistants.dm"
