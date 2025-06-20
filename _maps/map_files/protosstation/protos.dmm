@@ -16683,13 +16683,12 @@
 	id = "bridge blast";
 	name = "Bridge Blast Door"
 	},
-/obj/machinery/door/window/left/directional/east{
-	name = "Bridge Deliveries";
-	req_access = list("command");
-	dir = 2
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
+/obj/machinery/door/window/left/directional/south{
+	name = "Bridge Deliveries";
+	req_access = list("command")
+	},
 /turf/open/floor/plating,
 /area/station/command/bridge)
 "mNi" = (
