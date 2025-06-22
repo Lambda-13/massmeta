@@ -13,16 +13,6 @@
 
 //master files (unsorted, TODO: need modularization)
 
-#include "code\datums\components\crafting\makeshift.dm"
-#include "code\game\objects\items\devices\radio\radio.dm"
-#include "code\game\objects\items\storage\belt.dm"
-#include "code\game\objects\items\tools\crowbar.dm"
-#include "code\game\objects\items\tools\kitchen.dm"
-#include "code\game\objects\items\tools\multitool.dm"
-#include "code\game\objects\items\tools\screwdriver.dm"
-#include "code\game\objects\items\tools\weldingtool.dm"
-#include "code\game\objects\items\tools\wirecutters.dm"
-#include "code\game\objects\items\tools\wrench.dm"
 #include "code\obj\items\clothing\belt.dm"
 #include "code\datums\components\crafting\weapon_ammo.dm"
 #include "code\modules\ammunition\ballistic\shotgun.dm"

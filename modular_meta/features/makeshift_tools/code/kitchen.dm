@@ -1,7 +1,7 @@
 /obj/item/knife/kitchen/makeshift/makeshift
 	name = "makeshift knife"
 	icon_state = "knife_makeshift"
-	icon = 'massmeta/icons/obj/improvised.dmi'
+	icon = 'modular_meta/features/makeshift_tools/icons/improvised.dmi'
 	desc = "A flimsy, poorly made replica of a classic cooking utensil."
 	force = 8
 	throwforce = 8

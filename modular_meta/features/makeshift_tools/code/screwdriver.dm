@@ -1,7 +1,7 @@
 /obj/item/screwdriver/makeshift
 	name = "makeshift screwdriver"
 	desc = "Crude driver of screws. A primitive way to screw things up."
-	icon = 'massmeta/icons/obj/improvised.dmi'
+	icon = 'modular_meta/features/makeshift_tools/icons/improvised.dmi'
 	icon_state = "screwdriver_makeshift"
 	toolspeed = 2
 	random_color = FALSE

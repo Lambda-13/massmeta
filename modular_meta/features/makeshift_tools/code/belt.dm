@@ -1,10 +1,10 @@
 /obj/item/storage/belt/utility/makeshift
 	name = "makeshift toolbelt"
 	desc = "A shoddy holder of tools."
-	icon = 'massmeta/icons/obj/clothing/belts.dmi'
-	worn_icon = 'massmeta/icons/mob/clothing/belt.dmi'
-	lefthand_file = 'massmeta/icons/mob/inhands/equipment/belt_lefthand.dmi'
-	righthand_file = 'massmeta/icons/mob/inhands/equipment/belt_righthand.dmi'
+	icon = 'modular_meta/features/makeshift_tools/icons/belts.dmi'
+	worn_icon = 'modular_meta/features/makeshift_tools/icons/belt.dmi'
+	lefthand_file = 'modular_meta/features/makeshift_tools/icons/belt_lefthand.dmi'
+	righthand_file = 'modular_meta/features/makeshift_tools/icons/belt_righthand.dmi'
 	inhand_icon_state = "makeshiftbelt"
 	worn_icon_state = "makeshiftbelt"
 	icon_state = "makeshiftbelt"

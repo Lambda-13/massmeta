@@ -1,7 +1,7 @@
 /obj/item/weldingtool/makeshift
 	name = "makeshift welding tool"
 	desc = "A MacGyver-style welder."
-	icon = 'massmeta/icons/obj/improvised.dmi'
+	icon = 'modular_meta/features/makeshift_tools/icons/improvised.dmi'
 	icon_state = "welder_makeshift"
 	toolspeed = 2
 	max_fuel = 10

@@ -1,7 +1,7 @@
 /obj/item/wrench/makeshift
 	name = "makeshift wrench"
 	desc = "A crude, self-wrought wrench with common uses. Can be found in your hand."
-	icon = 'massmeta/icons/obj/improvised.dmi'
+	icon = 'modular_meta/features/makeshift_tools/icons/improvised.dmi'
 	icon_state = "wrench_makeshift"
 	toolspeed = 2
 
