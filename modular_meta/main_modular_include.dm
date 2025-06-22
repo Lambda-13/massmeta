@@ -22,6 +22,7 @@
 #include "features\more_clothes\includes.dm"
 #include "features\gases\includes.dm"
 #include "features\hardsuits\includes.dm"
+#include "features\heads_on_belts\includes.dm"
 #include "features\hierophant_club_resprite\includes.dm"
 #include "features\kvass_beverage\includes.dm"
 #include "features\lead_pipe\includes.dm"

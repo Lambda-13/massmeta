@@ -8,7 +8,6 @@
 	body_part = HEAD
 	plaintext_zone = "head"
 	w_class = WEIGHT_CLASS_BULKY //Quite a hefty load
-	slot_flags = ITEM_SLOT_BELT // MASSMETA EDIT: Nas'hrah moment
 	slowdown = 1 //Balancing measure
 	throw_range = 2 //No head bowling
 	px_x = 0
@@ -139,6 +138,10 @@
 
 		if(!(locate(/obj/item/organ/tongue) in src))
 			. += span_info("[real_name]'s tongue has been removed.")
+		//MASSMETA ADD BEGIN (heads_on_belts)
+		if(istype(src, /obj/item/bodypart/head))
+			. += span_info("You can wear it on you belt.")
+		//MASSMETA ADD END
 
 /obj/item/bodypart/head/can_dismember(obj/item/item)
 	if (!can_dismember)
