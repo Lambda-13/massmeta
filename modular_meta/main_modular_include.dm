@@ -15,6 +15,7 @@
 #include "features\antagonists\includes.dm"
 #include "features\antagonists_balance\includes.dm"
 #include "features\better_ui\includes.dm"
+#include "features\butt_farts\includes.dm"
 #include "features\cheburek_car\includes.dm"
 #include "features\colossus\includes.dm"
 #include "features\del_required_experiments\includes.dm"

@@ -6,24 +6,24 @@
 	if(issilicon(user))
 		user.visible_message("[user] lets out a synthesized fart!", "You let out a synthesized fart!")
 		playsound(user, pick(
-			'massmeta/sounds/fartts/rbf1.ogg',
-			'massmeta/sounds/fartts/rbf2.ogg',
-			'massmeta/sounds/fartts/rbf3.ogg',
-			'massmeta/sounds/fartts/rbf4.ogg',
-			'massmeta/sounds/fartts/rbf5.ogg',
-			'massmeta/sounds/fartts/rbf6.ogg',
-			'massmeta/sounds/fartts/rbf7.ogg',
-			'massmeta/sounds/fartts/rbf8.ogg',
-			'massmeta/sounds/fartts/rbf9.ogg',
-			'massmeta/sounds/fartts/rbf10.ogg',
-			'massmeta/sounds/fartts/rbf11.ogg',
-			'massmeta/sounds/fartts/rbf12.ogg',
-			'massmeta/sounds/fartts/rbf13.ogg',
-			'massmeta/sounds/fartts/rbf14.ogg',
-			'massmeta/sounds/fartts/rbf15.ogg',
-			'massmeta/sounds/fartts/rbf16.ogg',
-			'massmeta/sounds/fartts/rbf17.ogg',
-			'massmeta/sounds/fartts/rbf18.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf1.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf2.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf3.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf4.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf5.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf6.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf7.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf8.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf9.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf10.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf11.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf12.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf13.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf14.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf15.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf16.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf17.ogg',
+			'modular_meta/features/butt_farts/sound/farts/rbf18.ogg',
 		), 50, TRUE)
 		return
 	. = ..()
@@ -64,7 +64,7 @@
 			Person.Paralyze(15)
 			to_chat(Person, "<span class='warning'>[Person] attempts to fart on the [Holy], uh oh.<span>")
 			playsound(user,'sound/effects/magic/lightningshock.ogg', 50, 1)
-			playsound(user,	'massmeta/sounds/fartts/dagothgod.ogg', 80)
+			playsound(user,	'modular_meta/features/butt_farts/sound/farts/dagothgod.ogg', 80)
 			Person.electrocution_animation(15)
 			spawn(15)
 				to_chat(Person,"<span class='ratvar'>What a grand and intoxicating innocence. Perish.</span>")
@@ -72,7 +72,7 @@
 				dyn_explosion(Location, 1, 0)
 			return
 
-	playsound(ass_holder, "massmeta/sounds/fartts/superfart.ogg", 100, FALSE, pressure_affected = FALSE)
+	playsound(ass_holder, "modular_meta/features/butt_farts/sound/farts/superfart.ogg", 100, FALSE, pressure_affected = FALSE)
 	spawn(8)
 		Location = get_turf(user)
 		switch(rand(1000))

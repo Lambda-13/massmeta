@@ -276,7 +276,6 @@
 #include "code\__DEFINES\wounds.dm"
 #include "code\__DEFINES\xenobiology.dm"
 #include "code\__DEFINES\zoom.dm"
-#include "code\__DEFINES\~DELETE_AFTER_MODULARIZATION.dm"
 #include "code\__DEFINES\~meta_defines_include.dm"
 #include "code\__DEFINES\ai\ai.dm"
 #include "code\__DEFINES\ai\ai_blackboard.dm"
