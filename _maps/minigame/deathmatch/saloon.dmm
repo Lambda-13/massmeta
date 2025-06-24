@@ -79,12 +79,6 @@
 /obj/effect/landmark/deathmatch_player_spawn,
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
-"s" = (
-/obj/machinery/power/rtg/debug,
-/obj/structure/lattice,
-/obj/structure/cable,
-/turf/open/space/basic,
-/area/deathmatch)
 "t" = (
 /obj/structure/chair/wood,
 /turf/open/indestructible/hotelwood,
@@ -573,8 +567,8 @@ K
 K
 K
 K
-s
-s
+K
+K
 V
 V
 V
