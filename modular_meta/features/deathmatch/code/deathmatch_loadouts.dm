@@ -40,10 +40,11 @@
 /datum/outfit/deathmatch_loadout/saloon/bartender
 	name = "Deathmatch: Bartender"
 	display_name = "Bartender"
-	desc = "Drunkin' ass want from me some drinks."
+	desc = "Drunkin' assholes wants from me some drinks, i will feed 'em some bullets."
 
 	neck = /obj/item/clothing/neck/bowtie
 	uniform = /obj/item/clothing/under/costume/buttondown/slacks/service
+	belt = /obj/item/storage/belt/bandolier
 	suit = /obj/item/clothing/suit/armor/vest
 	backpack_contents = list(
 		/obj/item/storage/box/beanbag = 1,
@@ -51,5 +52,6 @@
 	ears = /obj/item/radio/headset/headset_srv
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
 	shoes = /obj/item/clothing/shoes/laceup
+	suit_store = /obj/item/gun/ballistic/shotgun/doublebarrel
 
 	skillchips = list(/obj/item/skillchip/drunken_brawler)
