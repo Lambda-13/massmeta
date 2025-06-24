@@ -2,12 +2,6 @@
 "a" = (
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
-"c" = (
-/obj/structure/chair/wood{
-	dir = 4
-	},
-/turf/open/floor/carpet,
-/area/deathmatch)
 "d" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/cup/glass/bottle/small{
@@ -36,7 +30,7 @@
 /obj/item/grenade/chem_grenade/clf3,
 /obj/item/grenade/chem_grenade/teargas,
 /obj/item/gun/grenadelauncher,
-/turf/open/floor/carpet,
+/turf/open/indestructible/hotelwood,
 /area/deathmatch)
 "h" = (
 /obj/structure/chair/wood{
@@ -60,10 +54,7 @@
 /area/deathmatch)
 "n" = (
 /obj/structure/table/wood,
-/obj/item/grenade/syndieminibomb/concussion{
-	pixel_x = 1;
-	pixel_y = 3
-	},
+/obj/item/grenade/frag,
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
 "p" = (
@@ -75,7 +66,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/deathmatch_player_spawn,
-/turf/open/floor/carpet,
+/turf/open/indestructible/hotelwood,
 /area/deathmatch)
 "r" = (
 /obj/structure/chair/wood{
@@ -87,12 +78,6 @@
 "t" = (
 /obj/structure/chair/wood,
 /turf/open/indestructible/hotelwood,
-/area/deathmatch)
-"u" = (
-/obj/structure/chair/wood{
-	dir = 1
-	},
-/turf/open/floor/carpet,
 /area/deathmatch)
 "v" = (
 /obj/structure/fake_stairs/wood/directional/east,
@@ -112,15 +97,6 @@
 	},
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
-"A" = (
-/obj/structure/chair/wood{
-	dir = 8
-	},
-/turf/open/floor/carpet,
-/area/deathmatch)
-"B" = (
-/turf/open/floor/carpet,
-/area/deathmatch)
 "C" = (
 /obj/structure/table/wood,
 /obj/item/gun/ballistic/revolver/mateba{
@@ -135,7 +111,7 @@
 	pixel_x = -22;
 	pixel_y = 2
 	},
-/turf/open/floor/carpet,
+/turf/open/indestructible/hotelwood,
 /area/deathmatch)
 "F" = (
 /obj/structure/chair/wood{
@@ -167,29 +143,32 @@
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/turf/open/floor/carpet,
+/turf/open/indestructible/hotelwood,
 /area/deathmatch)
 "K" = (
 /turf/open/space/basic,
 /area/space)
-"L" = (
-/obj/structure/chair/wood,
-/turf/open/floor/carpet,
-/area/deathmatch)
 "M" = (
 /obj/structure/rack{
 	color = "#a85f16"
 	},
-/obj/item/clothing/glasses/sunglasses/reagent,
+/obj/item/clothing/glasses/sunglasses{
+	pixel_x = 4;
+	pixel_y = 5
+	},
+/obj/item/clothing/glasses/sunglasses{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/item/clothing/glasses/sunglasses{
+	pixel_x = 0;
+	pixel_y = -1
+	},
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
 "N" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /turf/open/indestructible/hotelwood,
-/area/deathmatch)
-"O" = (
-/obj/structure/table/wood,
-/turf/open/floor/carpet,
 /area/deathmatch)
 "P" = (
 /obj/structure/chair/stool/bar/directional/north,
@@ -383,10 +362,10 @@ a
 W
 a
 a
-B
-A
-B
-L
+a
+F
+a
+t
 J
 h
 a
@@ -400,11 +379,11 @@ a
 d
 P
 a
-B
-B
-B
-B
-A
+a
+a
+a
+a
+F
 a
 a
 V
@@ -417,11 +396,11 @@ a
 T
 a
 a
-B
-c
-B
-B
-B
+a
+x
+a
+a
+a
 a
 a
 V
@@ -434,11 +413,11 @@ a
 U
 p
 a
-L
-O
-u
-B
-B
+t
+T
+h
+a
+a
 a
 G
 l
@@ -451,11 +430,11 @@ a
 T
 a
 a
-L
+t
 D
 q
-B
-B
+a
+a
 a
 a
 l
@@ -468,11 +447,11 @@ a
 T
 p
 a
-B
-A
-B
-B
-B
+a
+F
+a
+a
+a
 a
 a
 V
@@ -485,11 +464,11 @@ V
 V
 a
 a
-B
-B
-B
-B
-c
+a
+a
+a
+a
+x
 a
 a
 V
@@ -502,10 +481,10 @@ M
 V
 a
 a
-B
-c
-B
-L
+a
+x
+a
+t
 f
 h
 a
