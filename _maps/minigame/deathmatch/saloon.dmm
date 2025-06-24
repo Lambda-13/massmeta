@@ -32,6 +32,10 @@
 /obj/item/gun/grenadelauncher,
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
+"g" = (
+/obj/machinery/light/warm/directional/east,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
 "h" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -75,6 +79,12 @@
 /obj/effect/landmark/deathmatch_player_spawn,
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
+"s" = (
+/obj/machinery/power/rtg/debug,
+/obj/structure/lattice,
+/obj/structure/cable,
+/turf/open/space/basic,
+/area/deathmatch)
 "t" = (
 /obj/structure/chair/wood,
 /turf/open/indestructible/hotelwood,
@@ -95,6 +105,14 @@
 /obj/structure/chair/wood{
 	dir = 4
 	},
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"y" = (
+/obj/machinery/light/small/directional/east,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"B" = (
+/obj/machinery/light/small/directional/north,
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
 "C" = (
@@ -133,6 +151,10 @@
 	},
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
+"I" = (
+/obj/machinery/light/warm/directional/west,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
 "J" = (
 /obj/structure/table/wood,
 /obj/item/storage/box/syndie_kit/chemical{
@@ -168,6 +190,10 @@
 /area/deathmatch)
 "N" = (
 /obj/structure/reagent_dispensers/beerkeg,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"O" = (
+/obj/machinery/light/warm/directional/south,
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
 "P" = (
@@ -216,6 +242,7 @@
 	pixel_x = 9;
 	pixel_y = 10
 	},
+/obj/machinery/light/warm/directional/north,
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
 "T" = (
@@ -313,7 +340,7 @@ V
 V
 a
 a
-a
+I
 a
 a
 a
@@ -326,7 +353,7 @@ V
 N
 a
 V
-a
+B
 a
 a
 r
@@ -368,7 +395,7 @@ a
 t
 J
 h
-a
+O
 V
 "}
 (6,1,1) = {"
@@ -462,7 +489,7 @@ V
 Y
 V
 V
-a
+B
 a
 a
 a
@@ -487,7 +514,7 @@ a
 t
 f
 h
-a
+O
 V
 "}
 (13,1,1) = {"
@@ -510,7 +537,7 @@ V
 (14,1,1) = {"
 V
 V
-a
+y
 e
 V
 a
@@ -534,7 +561,7 @@ V
 V
 a
 a
-a
+g
 a
 a
 a
@@ -546,8 +573,8 @@ K
 K
 K
 K
-K
-K
+s
+s
 V
 V
 V
