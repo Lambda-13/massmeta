@@ -16,3 +16,14 @@
 	)
 	map_name = "jungle_showdown"
 	key = "jungle_showdown"
+
+/datum/lazy_template/deathmatch/saloon
+	name = "Wild West Saloon"
+	desc = "Trouble in Texas Town."
+	max_players = 6
+	allowed_loadouts = list(
+		/datum/outfit/deathmatch_loadout/battler/cowboy,
+		/datum/outfit/deathmatch_loadout/saloon/bartender
+	)
+	map_name = "saloon"
+	key = "saloon"

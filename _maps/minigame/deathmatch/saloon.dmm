@@ -1,0 +1,598 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"c" = (
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/turf/open/floor/carpet,
+/area/deathmatch)
+"d" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/glass/bottle/small{
+	pixel_x = -9;
+	pixel_y = 13
+	},
+/obj/item/reagent_containers/cup/glass/flask/gold{
+	pixel_x = 5;
+	pixel_y = 0
+	},
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"e" = (
+/obj/item/stack/medical/ointment{
+	pixel_x = 9;
+	pixel_y = 1
+	},
+/obj/structure/rack{
+	color = "#a85f16"
+	},
+/obj/item/stack/medical/suture/medicated,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"f" = (
+/obj/structure/table/wood,
+/obj/item/grenade/chem_grenade/clf3,
+/obj/item/grenade/chem_grenade/teargas,
+/obj/item/gun/grenadelauncher,
+/turf/open/floor/carpet,
+/area/deathmatch)
+"h" = (
+/obj/structure/chair/wood{
+	dir = 1
+	},
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"i" = (
+/obj/structure/fake_stairs/wood/directional/east,
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"j" = (
+/obj/structure/reagent_dispensers/fueltank/large,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"l" = (
+/obj/machinery/door/airlock/wood,
+/obj/effect/mapping_helpers/airlock/locked,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"n" = (
+/obj/structure/table/wood,
+/obj/item/grenade/syndieminibomb/concussion{
+	pixel_x = 1;
+	pixel_y = 3
+	},
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"p" = (
+/obj/structure/chair/stool/bar/directional/north,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"q" = (
+/obj/structure/chair/wood{
+	dir = 1
+	},
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/floor/carpet,
+/area/deathmatch)
+"r" = (
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"t" = (
+/obj/structure/chair/wood,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"u" = (
+/obj/structure/chair/wood{
+	dir = 1
+	},
+/turf/open/floor/carpet,
+/area/deathmatch)
+"v" = (
+/obj/structure/fake_stairs/wood/directional/east,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"w" = (
+/obj/machinery/chem_dispenser/drinks/beer{
+	pixel_x = 0;
+	pixel_y = 7
+	},
+/obj/structure/table/wood,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"x" = (
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"A" = (
+/obj/structure/chair/wood{
+	dir = 8
+	},
+/turf/open/floor/carpet,
+/area/deathmatch)
+"B" = (
+/turf/open/floor/carpet,
+/area/deathmatch)
+"C" = (
+/obj/structure/table/wood,
+/obj/item/gun/ballistic/revolver/mateba{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"D" = (
+/obj/structure/table/wood,
+/obj/item/gun/ballistic/rifle/boltaction{
+	pixel_x = -22;
+	pixel_y = 2
+	},
+/turf/open/floor/carpet,
+/area/deathmatch)
+"F" = (
+/obj/structure/chair/wood{
+	dir = 8
+	},
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"G" = (
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"H" = (
+/obj/structure/rack{
+	color = "#a85f16"
+	},
+/obj/item/gun/ballistic/shotgun/lethal{
+	pixel_x = 0;
+	pixel_y = 5
+	},
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"J" = (
+/obj/structure/table/wood,
+/obj/item/storage/box/syndie_kit/chemical{
+	pixel_x = 4;
+	pixel_y = 1
+	},
+/obj/item/knife/poison{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/turf/open/floor/carpet,
+/area/deathmatch)
+"K" = (
+/turf/open/space/basic,
+/area/space)
+"L" = (
+/obj/structure/chair/wood,
+/turf/open/floor/carpet,
+/area/deathmatch)
+"M" = (
+/obj/structure/rack{
+	color = "#a85f16"
+	},
+/obj/item/clothing/glasses/sunglasses/reagent,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"N" = (
+/obj/structure/reagent_dispensers/beerkeg,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"O" = (
+/obj/structure/table/wood,
+/turf/open/floor/carpet,
+/area/deathmatch)
+"P" = (
+/obj/structure/chair/stool/bar/directional/north,
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"Q" = (
+/obj/structure/chair/wood,
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"R" = (
+/obj/structure/sacrificealtar,
+/obj/effect/mob_spawn/corpse/human,
+/obj/item/knife/ritual,
+/obj/item/ritual_totem{
+	pixel_x = 0;
+	pixel_y = 32
+	},
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"S" = (
+/obj/structure/table/wood/poker,
+/obj/item/reagent_containers/cup/glass/bottle/curacao{
+	pixel_x = -11;
+	pixel_y = 17
+	},
+/obj/item/reagent_containers/cup/glass/bottle/yuyake{
+	pixel_x = 2;
+	pixel_y = 20
+	},
+/obj/item/reagent_containers/cup/glass/bottle/applejack{
+	pixel_x = 13;
+	pixel_y = 19
+	},
+/obj/item/reagent_containers/cup/glass/bottle/vermouth{
+	pixel_x = -18;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/cup/glass/bottle/vodka{
+	pixel_x = -4;
+	pixel_y = 10
+	},
+/obj/item/reagent_containers/cup/glass/bottle/rum/aged{
+	pixel_x = 9;
+	pixel_y = 10
+	},
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"T" = (
+/obj/structure/table/wood,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"U" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/glass/drinkingglass/shotglass{
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/cup/glass/bottle/beer/almost_empty{
+	pixel_x = 10;
+	pixel_y = 13
+	},
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"V" = (
+/turf/closed/indestructible/wood,
+/area/deathmatch)
+"W" = (
+/obj/structure/table/wood,
+/obj/item/gun/ballistic/revolver/golden{
+	pixel_x = 12;
+	pixel_y = -4
+	},
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"X" = (
+/obj/structure/table/wood/poker,
+/obj/item/reagent_containers/cup/glass/bottle/amaretto{
+	pixel_x = -6;
+	pixel_y = 17
+	},
+/obj/item/reagent_containers/cup/glass/bottle/gin{
+	pixel_x = 8;
+	pixel_y = 19
+	},
+/obj/item/reagent_containers/cup/glass/bottle/wine_voltaic{
+	pixel_x = 0;
+	pixel_y = 10
+	},
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"Y" = (
+/obj/machinery/door/airlock/wood,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"Z" = (
+/obj/structure/table/wood/poker,
+/obj/item/reagent_containers/cup/glass/bottle/cognac{
+	pixel_x = 4;
+	pixel_y = 18
+	},
+/obj/item/reagent_containers/cup/glass/bottle/fernet{
+	pixel_x = -8;
+	pixel_y = 19
+	},
+/obj/item/reagent_containers/cup/glass/bottle/navy_rum{
+	pixel_x = -11;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/cup/glass/bottle/kahlua{
+	pixel_x = -1;
+	pixel_y = 7
+	},
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+
+(1,1,1) = {"
+K
+K
+K
+K
+V
+V
+V
+V
+V
+V
+V
+V
+V
+V
+V
+"}
+(2,1,1) = {"
+V
+V
+V
+V
+V
+a
+a
+a
+a
+a
+a
+a
+a
+a
+V
+"}
+(3,1,1) = {"
+V
+N
+a
+a
+V
+a
+a
+a
+r
+a
+a
+a
+a
+a
+V
+"}
+(4,1,1) = {"
+V
+w
+a
+a
+T
+p
+a
+t
+n
+h
+a
+x
+a
+a
+V
+"}
+(5,1,1) = {"
+V
+w
+a
+a
+W
+a
+a
+B
+A
+B
+L
+J
+h
+a
+V
+"}
+(6,1,1) = {"
+V
+X
+a
+a
+d
+P
+a
+B
+B
+B
+B
+A
+a
+a
+V
+"}
+(7,1,1) = {"
+V
+S
+G
+a
+T
+a
+a
+B
+c
+B
+B
+B
+a
+a
+V
+"}
+(8,1,1) = {"
+V
+Z
+a
+a
+U
+p
+a
+L
+O
+u
+B
+B
+a
+G
+l
+"}
+(9,1,1) = {"
+V
+H
+a
+a
+T
+a
+a
+L
+D
+q
+B
+B
+a
+a
+l
+"}
+(10,1,1) = {"
+V
+j
+a
+a
+T
+p
+a
+B
+A
+B
+B
+B
+a
+a
+V
+"}
+(11,1,1) = {"
+V
+V
+Y
+V
+V
+a
+a
+B
+B
+B
+B
+c
+a
+a
+V
+"}
+(12,1,1) = {"
+V
+a
+a
+M
+V
+a
+a
+B
+c
+B
+L
+f
+h
+a
+V
+"}
+(13,1,1) = {"
+V
+R
+G
+a
+Y
+a
+a
+Q
+C
+h
+a
+F
+a
+a
+V
+"}
+(14,1,1) = {"
+V
+a
+a
+e
+V
+a
+a
+a
+F
+a
+a
+a
+a
+a
+V
+"}
+(15,1,1) = {"
+V
+V
+V
+V
+V
+a
+a
+a
+a
+a
+a
+a
+a
+a
+V
+"}
+(16,1,1) = {"
+K
+K
+K
+K
+V
+V
+V
+V
+V
+V
+v
+i
+v
+V
+V
+"}
+(17,1,1) = {"
+K
+K
+K
+K
+K
+K
+K
+K
+K
+V
+V
+V
+V
+V
+K
+"}
