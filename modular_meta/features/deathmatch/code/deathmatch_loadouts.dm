@@ -54,4 +54,4 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	suit_store = /obj/item/gun/ballistic/shotgun/doublebarrel
 
-	skillchips = list(/obj/item/skillchip/drunken_brawler)
+	backpack = /obj/item/storage/backpack

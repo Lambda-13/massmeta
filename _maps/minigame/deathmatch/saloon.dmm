@@ -2,6 +2,14 @@
 "a" = (
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
+"b" = (
+/obj/machinery/light/small/red/dim/directional/west,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"c" = (
+/obj/machinery/light/small/red/directional/east,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
 "d" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/cup/glass/bottle/small{
@@ -56,6 +64,10 @@
 /obj/effect/mapping_helpers/airlock/locked,
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
+"m" = (
+/obj/machinery/light/small/directional/west,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
 "n" = (
 /obj/structure/table/wood,
 /obj/item/grenade/frag,
@@ -77,6 +89,11 @@
 	dir = 4
 	},
 /obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/indestructible/hotelwood,
+/area/deathmatch)
+"s" = (
+/obj/structure/table/wood,
+/obj/machinery/light/floor,
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
 "t" = (
@@ -345,7 +362,7 @@ V
 V
 V
 N
-a
+m
 V
 B
 a
@@ -435,7 +452,7 @@ U
 p
 a
 t
-T
+s
 h
 a
 a
@@ -464,7 +481,7 @@ l
 V
 j
 a
-a
+y
 T
 p
 a
@@ -496,7 +513,7 @@ V
 "}
 (12,1,1) = {"
 V
-a
+b
 a
 M
 V
@@ -531,7 +548,7 @@ V
 (14,1,1) = {"
 V
 V
-y
+c
 e
 V
 a
