@@ -53,5 +53,4 @@
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
 	shoes = /obj/item/clothing/shoes/laceup
 	suit_store = /obj/item/gun/ballistic/shotgun/doublebarrel
-
-	backpack = /obj/item/storage/backpack
+	back = /obj/item/storage/backpack
