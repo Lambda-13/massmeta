@@ -54,6 +54,6 @@
 	return TRUE
 
 /datum/action/cooldown/spell/jaunt/ethereal_jaunt/sin/sloth
+	name = "Sloth Demonic Jaunt"
 	cooldown_time = 30 SECONDS
-
 	jaunt_duration = 1 SECONDS

@@ -16,7 +16,6 @@
 		"rapidsyringe",
 		"suppressor",
 		"super_pointy_tape",
-		"cryptominersyndie", // MASSMETA EDIT: Cryptoshit
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_5_POINTS)
 	hidden = TRUE
