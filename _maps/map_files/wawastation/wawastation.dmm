@@ -102,6 +102,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/catwalk_floor/iron_dark/telecomms,
 /area/station/ai_monitored/turret_protected/ai)
 "aby" = (
@@ -18082,6 +18083,7 @@
 "gts" = (
 /obj/structure/railing/corner,
 /obj/structure/cable/layer3,
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/catwalk_floor/iron_dark/telecomms,
 /area/station/ai_monitored/turret_protected/ai)
 "gty" = (
@@ -26855,6 +26857,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/iron/dark,
 /area/station/service/bar)
 "jwK" = (
@@ -57547,6 +57550,7 @@
 /area/station/command/corporate_dock)
 "tQt" = (
 /obj/structure/table/wood/poker,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/wood,
 /area/station/commons/lounge)
 "tQy" = (
@@ -63258,6 +63262,7 @@
 /obj/effect/turf_decal/tile/purple/half/contrasted{
 	dir = 1
 	},
+/obj/machinery/vending/mod_modules,
 /turf/open/floor/iron/white,
 /area/station/science/lobby)
 "vSy" = (

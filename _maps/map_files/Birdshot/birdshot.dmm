@@ -8669,6 +8669,7 @@
 "dfo" = (
 /obj/structure/cable,
 /obj/machinery/status_display/ai/directional/north,
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/circuit/red,
 /area/station/ai_monitored/turret_protected/ai)
 "dfM" = (
@@ -8760,6 +8761,7 @@
 /obj/machinery/power/terminal{
 	dir = 8
 	},
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/circuit/red,
 /area/station/ai_monitored/turret_protected/ai)
 "dhu" = (

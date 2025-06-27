@@ -17747,6 +17747,7 @@
 /obj/structure/closet/crate/preopen,
 /obj/effect/spawner/random/maintenance/two,
 /obj/effect/turf_decal/bot,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "etk" = (
@@ -81653,6 +81654,15 @@
 "uiH" = (
 /obj/structure/table/reinforced,
 /obj/machinery/computer/security/telescreen/research/directional/north,
+/obj/effect/spawner/random/decoration/lavalamp,
+/obj/effect/spawner/random/decoration/lavalamp{
+	pixel_y = -7;
+	pixel_x = -7
+	},
+/obj/effect/spawner/random/decoration/lavalamp{
+	pixel_y = 7;
+	pixel_x = 7
+	},
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "uiM" = (
@@ -82554,6 +82564,7 @@
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 9
 	},
+/obj/machinery/vending/mod_modules,
 /turf/open/floor/iron/white,
 /area/station/science/lab)
 "uue" = (
@@ -97090,6 +97101,11 @@
 /obj/structure/closet/crate,
 /obj/effect/spawner/random/maintenance/two,
 /obj/effect/turf_decal/bot,
+/obj/effect/spawner/random/decoration/lavalamp,
+/obj/effect/spawner/random/decoration/lavalamp,
+/obj/effect/spawner/random/decoration/lavalamp,
+/obj/effect/spawner/random/decoration/lavalamp,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "xYJ" = (
