@@ -456,9 +456,36 @@
 	hardsuit_type = "syndi"
 	w_class = WEIGHT_CLASS_NORMAL
 	armor_type = /datum/armor/hardsuit_syndi
-	allowed = list(/obj/item/gun, /obj/item/ammo_box,/obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/melee/energy/sword/saber, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
+	allowed = list(/obj/item/gun, /obj/item/ammo_box, /obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/melee/energy/sword/saber, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
 	hardsuit_helmet_type = /obj/item/clothing/head/helmet/space/hardsuit/syndi
 	cell = /obj/item/stock_parts/power_store/cell/hyper
+
+/////////////////////////////////// SYNDI MILITARY /////////////////////////////////////////////
+
+/obj/item/clothing/head/helmet/space/hardsuit/syndi_military
+	name = "black-red hardsuit helmet"
+	desc = "An military version of the syndicate helmet designed for active combat operations, with heavy armour and fire shielding. Property of Gorlex Marauders."
+	icon_state = "hardsuit1-syndimilitary"
+	hardsuit_type = "syndimilitary"
+	armor_type = /datum/armor/hardsuit_syndi_military
+	heat_protection = HEAD
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+
+/obj/item/clothing/suit/space/hardsuit/syndi_military
+	name = "black-red hardsuit"
+	desc = "An military version of the syndicate hardsuit designed for active combat operations, with heavy armour and fire shielding."
+	icon_state = "hardsuit1-syndimilitary"
+	inhand_icon_state = "syndie_military"
+	hardsuit_type = "syndimilitary"
+	hardsuit_helmet_type = /obj/item/clothing/head/helmet/space/hardsuit/syndi_military
+	armor_type = /datum/armor/hardsuit_syndi_military
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	cell = /obj/item/stock_parts/power_store/cell/bluespace
+	allowed = list(/obj/item/gun, /obj/item/ammo_box, /obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/melee/energy/sword/saber, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
+	slowdown = 0.5
 
 /////////////////////////////////// SYNDI ELITE /////////////////////////////////////////////
 

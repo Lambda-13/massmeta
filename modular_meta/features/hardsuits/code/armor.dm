@@ -254,3 +254,14 @@
 	bio = 20
 	fire = 100
 	acid = 100
+
+/datum/armor/hardsuit_syndi_military
+	melee = 70
+	bullet = 70
+	laser = 50
+	energy = 60
+	bomb = 90
+	bio = 100
+	fire = 100
+	acid = 100
+	wound = 30

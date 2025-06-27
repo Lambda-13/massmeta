@@ -3,7 +3,6 @@
 /obj/structure/table,
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /obj/machinery/light/small/directional/east,
-/obj/effect/spawner/random/contraband/permabrig_weapon,
 /turf/open/floor/iron/dark,
 /area/deathmatch)
 "as" = (
@@ -539,8 +538,8 @@
 /turf/open/floor/iron/herringbone,
 /area/deathmatch)
 "tJ" = (
-/obj/item/knife/butcher,
 /obj/effect/decal/cleanable/blood,
+/obj/item/knife/kitchen/makeshift/makeshift,
 /turf/open/floor/iron/dark/smooth_half{
 	dir = 1
 	},
@@ -549,7 +548,7 @@
 /obj/effect/turf_decal/tile/blue/opposingcorners,
 /obj/structure/table,
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/effect/spawner/random/contraband/permabrig_weapon,
+/obj/effect/spawner/random/contraband/permabrig_gear,
 /turf/open/floor/iron/white,
 /area/deathmatch)
 "ue" = (
@@ -1204,7 +1203,7 @@
 /area/deathmatch)
 "Tf" = (
 /obj/structure/closet/crate,
-/obj/effect/spawner/random/contraband/permabrig_weapon,
+/obj/effect/spawner/random/contraband/narcotics,
 /turf/open/floor/plating,
 /area/deathmatch)
 "TG" = (
@@ -1245,10 +1244,6 @@
 	dir = 8
 	},
 /turf/open/floor/iron/herringbone,
-/area/deathmatch)
-"Vd" = (
-/obj/effect/spawner/random/contraband/permabrig_weapon,
-/turf/open/floor/iron,
 /area/deathmatch)
 "Vh" = (
 /obj/effect/turf_decal/tile/red/opposingcorners,
@@ -1728,7 +1723,7 @@ Nn
 Gy
 CW
 iQ
-Vd
+vE
 iQ
 vE
 Kd
