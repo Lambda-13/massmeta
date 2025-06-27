@@ -6,27 +6,20 @@
 
 /datum/dynamic_ruleset/roundstart/bloodsucker
 	name = "Bloodsuckers"
-	antag_flag = ROLE_BLOODSUCKER
-	antag_datum = /datum/antagonist/bloodsucker
-	protected_roles = list(
-		// Command
-		JOB_CAPTAIN, JOB_HEAD_OF_PERSONNEL, JOB_HEAD_OF_SECURITY,
-		// Security
-		JOB_WARDEN, JOB_SECURITY_OFFICER, JOB_DETECTIVE,
-		// Curator
-		JOB_CURATOR,
+	config_tag = "Bloodsuckers"
+	jobban_flag = ROLE_TRAITOR
+	preview_antag_datum = /datum/antagonist/bloodsucker
+	pref_flag = ROLE_BLOODSUCKER
+	blacklisted_roles = list(
+		JOB_HEAD_OF_PERSONNEL,
 	)
-	restricted_roles = list(
-		JOB_AI,
-		JOB_CYBORG,
-	)
-	required_candidates = 2
-	minimum_players = 10
+	min_pop = 10
 	weight = 5
-	cost = 10
-	scaling_cost = 9
-	requirements = list(10,10,10,10,10,10,10,10,10,10)
-	antag_cap = list("denominator" = 24)
+	min_antag_cap = 1
+	max_antag_cap = 2
+
+/datum/dynamic_ruleset/roundstart/bloodsucker/get_always_blacklisted_roles()
+	return ..() | JOB_CURATOR
 
 /datum/dynamic_ruleset/roundstart/bloodsucker/pre_execute(population)
 	. = ..()
@@ -57,30 +50,25 @@
 //                                          //
 //////////////////////////////////////////////
 
-/datum/dynamic_ruleset/midround/bloodsucker
+/datum/dynamic_ruleset/midround/from_living/bloodsucker
 	name = "Vampiric Accident"
-	midround_ruleset_style = MIDROUND_RULESET_STYLE_HEAVY
-	antag_datum = /datum/antagonist/bloodsucker
-	antag_flag = ROLE_VAMPIRICACCIDENT
-	antag_flag_override = ROLE_BLOODSUCKER
-	protected_roles = list(
-		JOB_CAPTAIN, JOB_HEAD_OF_PERSONNEL, JOB_HEAD_OF_SECURITY,
-		JOB_WARDEN, JOB_SECURITY_OFFICER, JOB_DETECTIVE,
-		JOB_CURATOR,
+	config_tag = "Vampiric Accident"
+	jobban_flag = ROLE_TRAITOR
+	midround_type = HEAVY_MIDROUND
+	preview_antag_datum = /datum/antagonist/bloodsucker
+	pref_flag = ROLE_VAMPIRICACCIDENT
+	blacklisted_roles = list(
+		JOB_HEAD_OF_PERSONNEL,
 	)
-	restricted_roles = list(
-		JOB_AI,
-		JOB_CYBORG,
-		ROLE_POSITRONIC_BRAIN,
-	)
-	required_candidates = 1
-	minimum_players = 10
+	min_pop = 10
 	weight = 5
-	cost = 10
-	requirements = list(40,30,20,10,10,10,10,10,10,10)
+	max_antag_cap = 1
 	repeatable = FALSE
 
-/datum/dynamic_ruleset/midround/bloodsucker/trim_candidates()
+/datum/dynamic_ruleset/midround/from_living/bloodsucker/get_always_blacklisted_roles()
+	return ..() | JOB_CURATOR
+
+/datum/dynamic_ruleset/midround/from_living/bloodsucker/trim_candidates()
 	candidates = living_players
 	for(var/mob/living/player in candidates)
 		if(!is_station_level(player.z))
@@ -88,15 +76,8 @@
 		else if(player.mind && (player.mind.special_role || length(player.mind.antag_datums) > 0))
 			candidates.Remove(player)
 
-/datum/dynamic_ruleset/midround/bloodsucker/execute()
-	var/mob/M = pick(candidates)
-	assigned += M
-	candidates -= M
-	var/datum/antagonist/bloodsucker/newBloodsucker = new
-	M.mind.add_antag_datum(newBloodsucker)
-	message_admins("[ADMIN_LOOKUPFLW(M)] was selected by the [name] ruleset and has been made into a midround traitor.")
-	log_dynamic("[key_name(M)] was selected by the [name] ruleset and has been made into a midround traitor.")
-	return TRUE
+/datum/dynamic_ruleset/midround/from_living/bloodsucker/assign_role(datum/mind/candidate)
+	candidate.add_antag_datum(/datum/antagonist/bloodsucker)
 
 //////////////////////////////////////////////
 //                                          //
@@ -106,24 +87,19 @@
 
 /datum/dynamic_ruleset/latejoin/bloodsucker
 	name = "Bloodsucker Breakout"
-	antag_datum = /datum/antagonist/bloodsucker
-	antag_flag = ROLE_BLOODSUCKERBREAKOUT
-	antag_flag_override = ROLE_BLOODSUCKER
-	protected_roles = list(
-		JOB_CAPTAIN, JOB_HEAD_OF_PERSONNEL, JOB_HEAD_OF_SECURITY,
-		JOB_WARDEN, JOB_SECURITY_OFFICER, JOB_DETECTIVE,
-		JOB_CURATOR,
+	config_tag = "Bloodsucker Breakout"
+	jobban_flag = ROLE_TRAITOR
+	preview_antag_datum = /datum/antagonist/bloodsucker
+	pref_flag = ROLE_BLOODSUCKERBREAKOUT
+	blacklisted_roles = list(
+		JOB_HEAD_OF_PERSONNEL
 	)
-	restricted_roles = list(
-		JOB_AI,
-		JOB_CYBORG,
-	)
-	required_candidates = 1
-	minimum_players = 10
+	min_pop = 10
 	weight = 5
-	cost = 10
-	requirements = list(10,10,10,10,10,10,10,10,10,10)
 	repeatable = FALSE
+
+/datum/dynamic_ruleset/latejoin/bloodsucker/get_always_blacklisted_roles()
+	return ..() | JOB_CURATOR
 
 /datum/dynamic_ruleset/latejoin/bloodsucker/execute()
 	var/mob/latejoiner = pick(candidates) // This should contain a single player, but in case.
