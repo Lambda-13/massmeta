@@ -20042,6 +20042,9 @@
 	icon_state = "L8"
 	},
 /obj/structure/cable,
+/obj/effect/portal/permanent{
+	id = 1
+	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "hcE" = (

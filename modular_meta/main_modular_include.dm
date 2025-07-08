@@ -9,6 +9,7 @@
 
 /* --FEATURES-- */
 
+#include "features\event\includes.dm"
 #include "features\additional_circuit\includes.dm"
 #include "features\admin\includes.dm"
 #include "features\ai_things\includes.dm"
